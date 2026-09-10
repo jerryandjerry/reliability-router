@@ -1,0 +1,422 @@
+[
+ {
+  "id": "finqa_validation_527",
+  "query": "how much would i have made holding it those two years",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_validation_850",
+  "query": "那年跌了多少",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "finqa_validation_875",
+  "query": "the fees portion of it?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_test_574",
+  "query": "were those letters ok to bring in or not, i keep seeing both answers",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_test_718",
+  "query": "都说要证明害怕 那到底怎么个证明法",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_test_1340",
+  "query": "can they even be sued for that or no",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_test_1416",
+  "query": "standing?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_test_1790",
+  "query": "does the same one work over in the other court too",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_test_2690",
+  "query": "is splitting the cost down the middle a problem",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_test_2720",
+  "query": "他就这么把人拦下来了 这算合法吗",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_test_2901",
+  "query": "the parents thing",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_test_2963",
+  "query": "do they have to split it up even if that means running two of them at once",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_test_3369",
+  "query": "ok and the hearing part?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_425",
+  "query": "so what does holding onto that actually give him in the end",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_693",
+  "query": "so no trial then?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_937",
+  "query": "the out of state guy?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_1944",
+  "query": "he only pushed back on the first number so what happens to the rest",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_2164",
+  "query": "can both of those be handled together in one go",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_2590",
+  "query": "if you already told someone part of it does it still count",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_4345",
+  "query": "那个计划到底算不算",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_train_4873",
+  "query": "was that enough",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_4936",
+  "query": "did they actually look into it enough before going after him",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_5690",
+  "query": "whose call is that",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_6900",
+  "query": "separate action or part of the same one",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_7376",
+  "query": "is that kind of damage covered under his or not",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_8180",
+  "query": "do you still have to go through the whole thing first even if it gets you nothing",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_8215",
+  "query": "does it still count as ongoing during that period",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_8542",
+  "query": "does it still count if she only said it hours later",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_9017",
+  "query": "should they have been given the smaller option too",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_9634",
+  "query": "not letting him have the supplies?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_9954",
+  "query": "too late to raise it?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_10172",
+  "query": "do you have to show they acted badly first before any of that",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_10635",
+  "query": "他开枪那事 算合理吗",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_train_10639",
+  "query": "whats the key factor",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_10664",
+  "query": "so which one is the right place to file then",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_11709",
+  "query": "which number do they actually go off of",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_11731",
+  "query": "how rare is it",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_12283",
+  "query": "gun plus the drugs?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_12500",
+  "query": "他这种情况还有豁免吗",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_train_12909",
+  "query": "how much weight does that get on review",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_13182",
+  "query": "does that question block the class part",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_14248",
+  "query": "is doing it on purpose enough by itself",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_14557",
+  "query": "he never admitted anything so can he still sue after",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_15077",
+  "query": "without the actual paperwork?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_15751",
+  "query": "do both of the claims survive or just one of them",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_17074",
+  "query": "the one year contract guy",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_17125",
+  "query": "waived?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_17645",
+  "query": "can they ask for that stuff this early",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_17718",
+  "query": "is that all one subject or is it really two",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_17757",
+  "query": "why would they need all that from him though",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_18248",
+  "query": "do they have to say who it was",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_19057",
+  "query": "can they look at what was offered along the way",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_19064",
+  "query": "他们前后说的完全相反 这样也行吗",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_train_23150",
+  "query": "unpaid bills, can he walk away?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_24118",
+  "query": "can the old one come in to show what he meant to do",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_24299",
+  "query": "so when does the clock actually start",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_24460",
+  "query": "does just renting stuff out count as still operating",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_24768",
+  "query": "personal knowledge?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_24952",
+  "query": "why do they get that kind of protection",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_25495",
+  "query": "was he still covered while doing all that",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_25615",
+  "query": "那到底按哪边的算",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_train_27816",
+  "query": "elements?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_30925",
+  "query": "the co conspirator angle",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_32199",
+  "query": "does it matter that he was kind of careless too",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_34498",
+  "query": "do they still have to decide it at that point or can they just drop it",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_34501",
+  "query": "so who takes another look at it after that",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_34922",
+  "query": "is it still valid if nobody ever asked him about it",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_35500",
+  "query": "does the stay apply?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_36037",
+  "query": "is it mandatory",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_39500",
+  "query": "raising it later on?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ }
+]

@@ -1,0 +1,962 @@
+[
+ {
+  "text": "cite that",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "sources?",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "please cite your sources for this",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "add citations for every factual claim you make above",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "footnote it",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "can you cite where each of those numbers comes from",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "I would like inline citations, not a source list dumped at the end",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "include references at the bottom",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "attach citations to the three statistics you just gave me",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "give me a source for the second paragraph specifically",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "no sources no service",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "if you cannot source it, leave it out entirely",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "my professor docks points for uncited claims so please include them as you go",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "before I put this in front of my editor I need every fact sourced",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "walk me through it but flag every claim that needs a citation",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "and for anything nontrivial, tell me where you got it",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "I would rather have two solid sources than ten weak ones, so be picky",
+  "subtype": "direct_citation_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "link me to where you got that",
+  "subtype": "link_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "got a link?",
+  "subtype": "link_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "drop the URL",
+  "subtype": "link_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "link plz",
+  "subtype": "link_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "can you share the link so I can read it myself",
+  "subtype": "link_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "send me the actual page, not your summary of it",
+  "subtype": "link_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "I want the direct link to the documentation section you are describing",
+  "subtype": "link_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "please provide URLs for each source you rely on",
+  "subtype": "link_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "hyperlink the claims to their sources",
+  "subtype": "link_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "if there is a public link, paste it",
+  "subtype": "link_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "can you point me at the docs page for that",
+  "subtype": "link_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "send the link, I do not want to google it",
+  "subtype": "link_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "a permalink would be better than a search result if one exists",
+  "subtype": "link_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "I want the primary source, not a news write-up of it",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "who published the original data",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "point me at the original study rather than the press release",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "is that from the actual filing or from somebody summarizing the filing",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "give me the underlying dataset",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "I need the statute itself, not a law firm blog explaining it",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "which section of the spec says that",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "quote the original text verbatim",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "page number?",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "give me chapter and verse on that",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "I want the raw numbers from the source, not your rounding",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "which RFC covers that",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "point me to the commit or the issue thread where that was decided",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "cite the line number in the source file if you can",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "wikipedia does not count, give me what wikipedia is citing",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "skip the SEO blogs, I want real references",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "what does the FDA label actually say, can you quote it",
+  "subtype": "primary_source_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "can you fact-check that before I use it",
+  "subtype": "verification_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "double-check that claim, it sounds off to me",
+  "subtype": "verification_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "run that by a source and tell me if it holds up",
+  "subtype": "verification_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "I need to be able to check this myself",
+  "subtype": "verification_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "is this verifiable",
+  "subtype": "verification_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "how would I confirm this independently",
+  "subtype": "verification_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "could someone else reproduce this claim from public information",
+  "subtype": "verification_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "please confirm this is still current as of this year",
+  "subtype": "verification_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "has this been corroborated anywhere else",
+  "subtype": "verification_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "is there a changelog entry that confirms that behavior",
+  "subtype": "verification_request",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "check whether that has been retracted or superseded",
+  "subtype": "verification_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "sanity check this for me, I do not want to repeat something wrong",
+  "subtype": "verification_request",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "and tell me if any of those sources contradict each other",
+  "subtype": "verification_request",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "who says so?",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "prove it",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "receipts?",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "show your work",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "that sounds made up, show me",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "I am not taking your word for it",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "you sure about that? source?",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "no offense but I have caught you making things up before, so give me proof",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "big claim, where is the evidence",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "that number seems way too high, what exactly is it based on",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "convince me that is not just vibes",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "extraordinary claims, extraordinary evidence, go ahead",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "just tell me straight, do you have a source or not",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "who funded the study you are leaning on",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "is the source you are using independent of the industry it covers",
+  "subtype": "skeptical_challenge",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "please cite in APA format",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "give me the full bibliographic reference including journal, volume and year",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "which peer-reviewed papers support this",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "I would want to see the study",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "is there a meta-analysis on this or just single trials",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "give me three references I can look up in PubMed",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "author, year, journal please",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "what was the sample size and where was it published",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "BibTeX entries would be ideal",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "any randomized trials behind this or is it all observational",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "cite the literature, my advisor will ask",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "what is the DOI",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "only cite work published in the last five years please",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "prefer government or academic sources over commentary if you have them",
+  "subtype": "academic_reference",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "I need documented evidence for the audit file",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "which regulation are you basing that on, with the citation",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "for compliance purposes please reference the specific clause number",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "our auditors will want the source document, can you identify it precisely",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "is that documented in an official guidance publication",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "give me the CFR cite",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "I have to attach evidence to this control, what is the authoritative reference",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "legal will need the primary authority for that statement before we ship it",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "what is the effective date of the rule you are citing",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "can you tell me which court case established that",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "give me the case citation",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "is that in the terms of service, and if so where",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "I need a source my insurance will accept",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "give me something I can show my doctor",
+  "subtype": "compliance_evidence",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "how confident are you and on what basis",
+  "subtype": "confidence_basis",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "is that something you actually know or are you guessing",
+  "subtype": "confidence_basis",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "flag anything you are unsure about",
+  "subtype": "confidence_basis",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "give me a confidence level for each claim",
+  "subtype": "confidence_basis",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "tell me which parts are documented and which parts are your inference",
+  "subtype": "confidence_basis",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "how sure are you, honestly",
+  "subtype": "confidence_basis",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "what is your evidence for that, ranked by strength",
+  "subtype": "confidence_basis",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "if you are not certain, say so rather than guessing",
+  "subtype": "confidence_basis",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "what would change your mind about that claim",
+  "subtype": "confidence_basis",
+  "lang": "en",
+  "formality": "formal"
+ },
+ {
+  "text": "is that the consensus view or one paper finding",
+  "subtype": "confidence_basis",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "if this is coming from memory rather than a document, please say so",
+  "subtype": "confidence_basis",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "on a scale of pretty sure to definitely, where does that sit",
+  "subtype": "confidence_basis",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "where did you read that",
+  "subtype": "informal_where_from",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "where is that from",
+  "subtype": "informal_where_from",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "is that documented anywhere",
+  "subtype": "informal_where_from",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "where does that number come from",
+  "subtype": "informal_where_from",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "who told you that",
+  "subtype": "informal_where_from",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "did you get that from the docs or somewhere else",
+  "subtype": "informal_where_from",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "any idea where that came from originally",
+  "subtype": "informal_where_from",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "is that written down somewhere I can go look at",
+  "subtype": "informal_where_from",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "what are you basing that on",
+  "subtype": "informal_where_from",
+  "lang": "en",
+  "formality": "neutral"
+ },
+ {
+  "text": "heard that where",
+  "subtype": "informal_where_from",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "out of curiosity, what is that coming from",
+  "subtype": "informal_where_from",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "how do you know that",
+  "subtype": "informal_where_from",
+  "lang": "en",
+  "formality": "casual"
+ },
+ {
+  "text": "有出处吗",
+  "subtype": "informal_where_from",
+  "lang": "zh",
+  "formality": "casual"
+ },
+ {
+  "text": "你从哪看到的",
+  "subtype": "informal_where_from",
+  "lang": "zh",
+  "formality": "casual"
+ },
+ {
+  "text": "这个数字是怎么来的，出处在哪",
+  "subtype": "informal_where_from",
+  "lang": "zh",
+  "formality": "neutral"
+ },
+ {
+  "text": "你怎么知道的？",
+  "subtype": "informal_where_from",
+  "lang": "zh",
+  "formality": "casual"
+ },
+ {
+  "text": "这个说法有来源吗，最好能给我链接",
+  "subtype": "link_request",
+  "lang": "zh",
+  "formality": "neutral"
+ },
+ {
+  "text": "发个链接我自己看",
+  "subtype": "link_request",
+  "lang": "zh",
+  "formality": "casual"
+ },
+ {
+  "text": "网址呢",
+  "subtype": "link_request",
+  "lang": "zh",
+  "formality": "casual"
+ },
+ {
+  "text": "麻烦把相关网页地址一并附上，我要转给同事",
+  "subtype": "link_request",
+  "lang": "zh",
+  "formality": "neutral"
+ },
+ {
+  "text": "麻烦附上参考文献",
+  "subtype": "direct_citation_request",
+  "lang": "zh",
+  "formality": "formal"
+ },
+ {
+  "text": "每一条结论后面都标上出处",
+  "subtype": "direct_citation_request",
+  "lang": "zh",
+  "formality": "formal"
+ },
+ {
+  "text": "如果没有可靠来源，就别写进去",
+  "subtype": "direct_citation_request",
+  "lang": "zh",
+  "formality": "neutral"
+ },
+ {
+  "text": "我要拿去给领导看，资料来源麻烦列清楚",
+  "subtype": "direct_citation_request",
+  "lang": "zh",
+  "formality": "neutral"
+ },
+ {
+  "text": "谁说的？",
+  "subtype": "skeptical_challenge",
+  "lang": "zh",
+  "formality": "casual"
+ },
+ {
+  "text": "空口无凭，给个证据",
+  "subtype": "skeptical_challenge",
+  "lang": "zh",
+  "formality": "casual"
+ },
+ {
+  "text": "这个听着不太靠谱，有依据吗",
+  "subtype": "skeptical_challenge",
+  "lang": "zh",
+  "formality": "casual"
+ },
+ {
+  "text": "别又是你编的吧，拿证据来",
+  "subtype": "skeptical_challenge",
+  "lang": "zh",
+  "formality": "casual"
+ },
+ {
+  "text": "请给出原始文献，不要二手转述",
+  "subtype": "primary_source_request",
+  "lang": "zh",
+  "formality": "formal"
+ },
+ {
+  "text": "这个数据出自哪份报告，能给个页码吗",
+  "subtype": "primary_source_request",
+  "lang": "zh",
+  "formality": "neutral"
+ },
+ {
+  "text": "官方文档里哪一节写了这个",
+  "subtype": "primary_source_request",
+  "lang": "zh",
+  "formality": "neutral"
+ },
+ {
+  "text": "能把原文贴出来吗",
+  "subtype": "primary_source_request",
+  "lang": "zh",
+  "formality": "neutral"
+ },
+ {
+  "text": "别给我营销号的文章，我要一手资料",
+  "subtype": "primary_source_request",
+  "lang": "zh",
+  "formality": "casual"
+ },
+ {
+  "text": "能不能帮我核实一下这个信息",
+  "subtype": "verification_request",
+  "lang": "zh",
+  "formality": "neutral"
+ },
+ {
+  "text": "我需要自己能查证的材料",
+  "subtype": "verification_request",
+  "lang": "zh",
+  "formality": "neutral"
+ },
+ {
+  "text": "有没有权威机构发布过相关说明",
+  "subtype": "verification_request",
+  "lang": "zh",
+  "formality": "formal"
+ },
+ {
+  "text": "帮我求证一下，这条现在还有效吗",
+  "subtype": "verification_request",
+  "lang": "zh",
+  "formality": "casual"
+ },
+ {
+  "text": "引用请标注作者、年份和期刊",
+  "subtype": "academic_reference",
+  "lang": "zh",
+  "formality": "formal"
+ },
+ {
+  "text": "有没有同行评审的论文支持这个结论",
+  "subtype": "academic_reference",
+  "lang": "zh",
+  "formality": "formal"
+ },
+ {
+  "text": "论文的 DOI 能给一下吗",
+  "subtype": "academic_reference",
+  "lang": "zh",
+  "formality": "formal"
+ },
+ {
+  "text": "合规审计要用，请注明具体条款编号",
+  "subtype": "compliance_evidence",
+  "lang": "zh",
+  "formality": "formal"
+ },
+ {
+  "text": "这条要求写在哪份官方文件里，法务会追问",
+  "subtype": "compliance_evidence",
+  "lang": "zh",
+  "formality": "formal"
+ },
+ {
+  "text": "你对这个判断有几成把握，依据是什么",
+  "subtype": "confidence_basis",
+  "lang": "zh",
+  "formality": "neutral"
+ },
+ {
+  "text": "不确定的地方直接说明，别硬编",
+  "subtype": "confidence_basis",
+  "lang": "zh",
+  "formality": "neutral"
+ },
+ {
+  "text": "你说的这个，是文档里写的还是你自己推测的",
+  "subtype": "confidence_basis",
+  "lang": "zh",
+  "formality": "neutral"
+ }
+]

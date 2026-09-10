@@ -1,0 +1,248 @@
+[
+ {
+  "id": "hotpot_qa_train_1315",
+  "query": "which mag does he write for again",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_1784",
+  "query": "what other religions are there besides the main one",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_3790",
+  "query": "both native to the same continent?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_5105",
+  "query": "the job title behind that name?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_5428",
+  "query": "what kinda riders did he race alongside",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_6983",
+  "query": "ok and how many wins was that record",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_7544",
+  "query": "他俩共同点是啥来着",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_8059",
+  "query": "是第一个还是第二个",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_9615",
+  "query": "so whats the shared genre",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_11906",
+  "query": "what league do they play in",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_13014",
+  "query": "which ones younger",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_13441",
+  "query": "what band were those guys in before this one",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_14204",
+  "query": "what county tho",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_14801",
+  "query": "那她母亲是谁来着",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_15176",
+  "query": "is he the american one",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_19344",
+  "query": "who led the ambush then",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_20949",
+  "query": "part of which holiday exactly",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_21798",
+  "query": "both writers?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_23778",
+  "query": "and the third region?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_26022",
+  "query": "what was the population back in 2010",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_27303",
+  "query": "are those two the same kind of thing",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_28883",
+  "query": "the county on the other side of the river?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_29764",
+  "query": "and for the second one who did the music",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_29779",
+  "query": "who'd he play",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_29877",
+  "query": "how does it rank size wise",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_30608",
+  "query": "whats the second album called",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_31026",
+  "query": "这俩算什么",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_33026",
+  "query": "same city for both?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_34979",
+  "query": "which town is the station licensed to",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_36410",
+  "query": "what year did that one come out",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_37221",
+  "query": "so who runs it",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_37353",
+  "query": "都开花吗",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_38947",
+  "query": "what year did he win it",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_39163",
+  "query": "the guy behind those action flicks?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_39814",
+  "query": "when was the album recorded",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_43647",
+  "query": "where's she based",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_46062",
+  "query": "the breed though?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_48765",
+  "query": "which side did he sign with",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_49826",
+  "query": "那两个在哪个城市来着",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_50068",
+  "query": "who was behind that superhero one",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_50664",
+  "query": "who ranked higher",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ }
+]

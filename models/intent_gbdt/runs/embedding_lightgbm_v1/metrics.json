@@ -1,0 +1,23 @@
+{
+  "family": "embedding",
+  "name": "embedding_lightgbm",
+  "version": "v1",
+  "library": "lightgbm",
+  "threshold": 0.5,
+  "params": {
+    "n_estimators": 1496,
+    "learning_rate": 0.0152660765779951,
+    "num_leaves": 227,
+    "min_child_samples": 56,
+    "subsample": 0.5627491888672524,
+    "colsample_bytree": 0.823159877681404,
+    "reg_lambda": 15.685519323346497,
+    "reg_alpha": 19.67903789331508
+  },
+  "search_cv_accuracy": 0.7358,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "train_cases": 9000,
+  "variant": "cls",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "training_set_accuracy": 0.9281
+}

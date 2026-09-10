@@ -1,0 +1,14 @@
+{
+  "name": "tfidf_svm",
+  "version": "v1",
+  "classifier": "svm",
+  "analyzer": "word",
+  "ngram_range": [1, 2],
+  "min_df": 2,
+  "max_features": 200000,
+  "C": 1.0,
+  "threshold": 0.5,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "output_dir": "models/intent_tfidf/runs/svm_v1",
+  "export_dir": "models/intent_tfidf/exported/svm_v1"
+}

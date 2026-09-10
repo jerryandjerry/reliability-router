@@ -1,0 +1,422 @@
+[
+ {
+  "id": "pubmedqa_train_1",
+  "query": "those two charts, do they give different numbers",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_7",
+  "query": "do we actually need to correct for that or is it fine as is",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_17",
+  "query": "any patterns?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_18",
+  "query": "is there a decent way to learn it without doing it on someone",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_53",
+  "query": "does the way the form is written change how many people sign up",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_72",
+  "query": "and if you add the second one can you cut the dose down",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_86",
+  "query": "could it be that?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_87",
+  "query": "那玩意儿吃多了对身体有害吗",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "pubmedqa_train_88",
+  "query": "ok and does the hands on stuff actually help with that",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_93",
+  "query": "does the scan change what you actually end up doing",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_107",
+  "query": "the two sets of records — same numbers or not",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_108",
+  "query": "will the mutation testing actually tell us anything useful beforehand",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_117",
+  "query": "does going in the smaller way mean fewer problems after",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_130",
+  "query": "those women — findable in the data at all?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_140",
+  "query": "does it matter",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_163",
+  "query": "the two recordings, any link between them",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_180",
+  "query": "if it's getting bigger fast should i be worried",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_206",
+  "query": "is paying people to do it actually worth it",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_227",
+  "query": "吃那个补充剂有用吗",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "pubmedqa_train_247",
+  "query": "trust that number?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_249",
+  "query": "so if it keeps bouncing up and down can i just skip the next step",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_260",
+  "query": "does the way they pick candidates predict anything later",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_293",
+  "query": "does it carry over once they're grown up",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_312",
+  "query": "is half enough",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_337",
+  "query": "is the test actually specific or does it light up for everyone",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_340",
+  "query": "那个窗口期里大家的表达情况都差不多吗",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "zh"
+ },
+ {
+  "id": "pubmedqa_train_343",
+  "query": "does timing make a difference here",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_364",
+  "query": "if you post the recordings do people just stop showing up",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_366",
+  "query": "are we even measuring the same thing though",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_371",
+  "query": "is it working through the other one or on its own",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_374",
+  "query": "are the older folks actually covered well enough",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_406",
+  "query": "and does the score depend on when the shot was given",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_411",
+  "query": "worth the price?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_422",
+  "query": "do the kids actually follow what they were told to do after",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_465",
+  "query": "can it dropping that low actually cause damage",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_468",
+  "query": "do we still need the imaging after or can we skip it now",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_504",
+  "query": "did capping the hours actually help",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_512",
+  "query": "那个基因跟这个病有关系吗",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "pubmedqa_train_527",
+  "query": "is it useful",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_540",
+  "query": "is a low level a bad sign long term",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_543",
+  "query": "does taking it earlier help",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_563",
+  "query": "that scan for picking it up early?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_578",
+  "query": "is doing it remotely safe",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_597",
+  "query": "if the fit isn't quite right does that shorten how long they live",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_619",
+  "query": "do we really need to watch them that closely the first time",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_661",
+  "query": "does operating on it actually help",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_671",
+  "query": "would thinner slices make it show up clearer",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_685",
+  "query": "现在是不是比以前活得久了",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "zh"
+ },
+ {
+  "id": "pubmedqa_train_694",
+  "query": "does that method actually improve how much they learn",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_703",
+  "query": "could a virus be behind it",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_715",
+  "query": "do they all agree on how much is enough or is everyone doing their own thing",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_719",
+  "query": "are we actually following the guidelines on that",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_729",
+  "query": "sending people home sooner — worse care?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_737",
+  "query": "bleeding risk with that condition?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_742",
+  "query": "do we need to numb it first or nah",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_780",
+  "query": "多弄几次会好一点吗",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "pubmedqa_train_798",
+  "query": "does the government help actually help",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_808",
+  "query": "does what they decide actually end up happening",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_827",
+  "query": "reliable enough?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_828",
+  "query": "and if we swap to the slippery ones does it work more often",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_839",
+  "query": "top part vs bottom part, different?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_840",
+  "query": "不把那个一起切掉也能做吗 安全吗",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "pubmedqa_train_853",
+  "query": "does having a lot of them make it riskier on its own",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_860",
+  "query": "worth repeating it?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_895",
+  "query": "do they even know what it costs",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_899",
+  "query": "and if it's already being treated, still risky?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_902",
+  "query": "is it safe out there",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_906",
+  "query": "他们知道大概多少钱吗",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "pubmedqa_train_910",
+  "query": "the experience thing — does it matter for that",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_932",
+  "query": "can that lab value tell them apart",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ }
+]

@@ -1,0 +1,21 @@
+{
+  "family": "embedding",
+  "name": "embedding_hgb",
+  "version": "v1",
+  "library": "hgb",
+  "threshold": 0.5,
+  "params": {
+    "max_iter": 225,
+    "learning_rate": 0.023539659850149608,
+    "max_leaf_nodes": 34,
+    "min_samples_leaf": 82,
+    "l2_regularization": 9.452709767275815,
+    "max_features": 0.302149094496579
+  },
+  "search_cv_accuracy": 0.7317,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "train_cases": 9000,
+  "variant": "cls",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "training_set_accuracy": 0.8686
+}

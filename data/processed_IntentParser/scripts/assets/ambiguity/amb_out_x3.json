@@ -1,0 +1,248 @@
+[
+ {
+  "id": "musique_train_18949",
+  "query": "and in both those countries what do they call them",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_19016",
+  "query": "when did they invade those two",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_19099",
+  "query": "what year did the voters there finally go back to that party again, i forget",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_19911",
+  "query": "what year was that war",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_136",
+  "query": "the bigger river that one runs into?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_728",
+  "query": "how many books did he supposedly write",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_828",
+  "query": "when did he die",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1312",
+  "query": "whats it short for",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1488",
+  "query": "which label did they buy",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1554",
+  "query": "ok so when did that battle actually kick off",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1581",
+  "query": "why did he leave that place",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1879",
+  "query": "who has the most hits",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1909",
+  "query": "the seat of the county right next to it?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1953",
+  "query": "他临死前讲的那次 是在哪个州啊",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_validation_1962",
+  "query": "which district tho",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1966",
+  "query": "and that guy, which state was it",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1969",
+  "query": "where was that sermon he gave right before he died, like what district",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_2322",
+  "query": "when did they first arrive there",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_2367",
+  "query": "what got rid of the privileges",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_608",
+  "query": "the play he got hurt on?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_3534",
+  "query": "which of the two was higher",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_4681",
+  "query": "how many years did that whole population drop stretch across",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_6724",
+  "query": "还剩四分多钟那会儿 领先多少来着",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_6846",
+  "query": "how many more in the first half?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_7122",
+  "query": "lead in the first?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_7500",
+  "query": "the short one, how many yards",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_9925",
+  "query": "how many more were there than the other two",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_11318",
+  "query": "他俩第一个那个差几码",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_11463",
+  "query": "there were two big things that year right, what were they",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_12051",
+  "query": "and before halftime?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_12547",
+  "query": "incompletions?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_13642",
+  "query": "whats the combined yardage",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_14570",
+  "query": "第一节谁分最多啊",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_16405",
+  "query": "what percent of people werent that back then",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_18187",
+  "query": "how many losses so far",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_20010",
+  "query": "这俩平均下来差多少人",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_22689",
+  "query": "how many working",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_25200",
+  "query": "the fourth down ones they actually got?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_25238",
+  "query": "and how long did that one rule for",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_27937",
+  "query": "他接了几个达阵来着",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_29021",
+  "query": "whats the gap between those two figures in dollars",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ }
+]

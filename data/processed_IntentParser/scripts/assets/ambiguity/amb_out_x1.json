@@ -1,0 +1,248 @@
+[
+ {
+  "id": "hotpot_qa_train_50688",
+  "query": "wait so those two are basically the same kind of brand? what kind",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_52156",
+  "query": "sorry going back a sec - that one was under whose army",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_53913",
+  "query": "who gave him the top grade for that",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_55940",
+  "query": "那个党现在是谁在管",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_62606",
+  "query": "publisher for that one?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_63115",
+  "query": "where they from",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_64107",
+  "query": "genre for both of those",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_65085",
+  "query": "i forget, who was the singer he ended up working with on all that stuff",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_65824",
+  "query": "the wednesday thursday thing",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_68572",
+  "query": "who was the other guy in that movie again",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_68797",
+  "query": "ok so out of those two which one is it",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_68910",
+  "query": "多少人参战",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_69550",
+  "query": "whats that place called now",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_69761",
+  "query": "i mixed them up, which one was which again",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_73442",
+  "query": "what county",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_74023",
+  "query": "same genre for both right",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_74118",
+  "query": "which of the two has been around longer",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_79180",
+  "query": "where was he the chair",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_79198",
+  "query": "who wrote the book it was based on? the original one i mean",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_79770",
+  "query": "哪个里面有肉桂来着",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_79845",
+  "query": "and which one of those is the boston one",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_80832",
+  "query": "who directed that one",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_82251",
+  "query": "same country?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_84547",
+  "query": "the older store in there?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_87890",
+  "query": "one of them is the french one right, which",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_87973",
+  "query": "这俩一个科的?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_88279",
+  "query": "theyre both a genus of what exactly",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_88440",
+  "query": "so those two, theyd count as what exactly",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_89790",
+  "query": "both same state?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_314",
+  "query": "and how many days did that end up taking",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_1268",
+  "query": "both shrubs?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_1579",
+  "query": "谁年轻点",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_validation_2284",
+  "query": "shes what nationality",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_5718",
+  "query": "which one of them actually did it first",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_6869",
+  "query": "which one of those came first, do you know",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_7172",
+  "query": "and it does what to the soil around it, i didnt catch that part",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_128",
+  "query": "when did he die",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_351",
+  "query": "那个大使馆开在哪个国家",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_train_1609",
+  "query": "when did it start",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_3220",
+  "query": "how many people live in that city anyway",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_4649",
+  "query": "how many grammys does she have",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ }
+]

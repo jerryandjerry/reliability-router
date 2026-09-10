@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Routing evaluation · routing_eval_golden_1k.jsonl</title>
+<style>
+:root{color-scheme:light;--surface:#fcfcfb;--plane:#f9f9f7;--ink:#0b0b0b;--ink2:#52514e;
+--muted:#898781;--grid:#e1e0d9;--line:#c3c2b7;--ring:rgba(11,11,11,.10);--series:#2a78d6;--track:#eceae4}
+@media(prefers-color-scheme:dark){:root:where(:not([data-theme=light])){color-scheme:dark;
+--surface:#1a1a19;--plane:#0d0d0d;--ink:#fff;--ink2:#c3c2b7;--muted:#898781;--grid:#2c2c2a;
+--line:#383835;--ring:rgba(255,255,255,.10);--series:#3987e5;--track:#2c2c2a}}
+:root[data-theme=dark]{color-scheme:dark;--surface:#1a1a19;--plane:#0d0d0d;--ink:#fff;--ink2:#c3c2b7;
+--muted:#898781;--grid:#2c2c2a;--line:#383835;--ring:rgba(255,255,255,.10);--series:#3987e5;--track:#2c2c2a}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--plane);color:var(--ink);
+margin:0;padding:40px 20px 80px;line-height:1.5}
+.wrap{max-width:1080px;margin:0 auto}
+h1{font-size:22px;margin:0 0 4px;letter-spacing:-.01em}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+margin:40px 0 14px;font-weight:600}
+h3{font-size:15px;margin:0 0 2px}
+.meta{color:var(--ink2);font-size:13px;margin:0 0 28px}
+.meta code{background:var(--surface);border:1px solid var(--ring);border-radius:5px;padding:1px 6px;font-size:12px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.tile{background:var(--surface);border:1px solid var(--ring);border-radius:12px;padding:16px 18px}
+.tile .k{font-size:12px;color:var(--ink2);margin-bottom:6px}
+.tile .v{font-size:32px;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+.tile .n{font-size:12px;color:var(--muted);margin-top:4px}
+.tile.lead{border-color:var(--series);box-shadow:inset 0 0 0 1px var(--series)}
+.cmwrap{display:grid;grid-template-columns:auto 1fr 1fr;gap:2px;align-items:stretch;
+background:var(--surface);border:1px solid var(--ring);border-radius:12px;padding:14px}
+.cmh{font-size:11px;color:var(--muted);display:flex;align-items:center;justify-content:center;padding:6px}
+.cm{border-radius:8px;padding:14px 12px;background:
+color-mix(in oklab,var(--series) calc(var(--w)*82%),var(--surface))}
+.cmn{font-size:26px;font-weight:650;letter-spacing:-.02em}
+.cml{font-size:11px;color:var(--ink2);margin-top:2px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.panel{background:var(--surface);border:1px solid var(--ring);border-radius:12px;padding:16px 18px 18px}
+.blurb{font-size:12px;color:var(--muted);margin:0 0 14px}
+.bars{display:flex;flex-direction:column;gap:6px}
+.row{display:grid;grid-template-columns:150px 1fr 74px;gap:10px;align-items:center;
+padding:2px 4px;border-radius:6px;outline:none;position:relative}
+.row:hover,.row:focus{background:var(--plane)}
+.rl{font-size:12.5px;color:var(--ink2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.track{height:11px;background:var(--track);border-radius:4px;overflow:hidden}
+.fill{height:100%;background:var(--series);border-radius:0 4px 4px 0;min-width:2px}
+.rv{font-size:12.5px;text-align:right;font-variant-numeric:tabular-nums;color:var(--ink)}
+.rv .sub{display:block;font-size:11px;color:var(--muted)}
+.row[data-tip]:hover::after,.row[data-tip]:focus::after{content:attr(data-tip);position:absolute;
+left:150px;bottom:calc(100% + 6px);z-index:9;background:var(--ink);color:var(--surface);
+font-size:11.5px;line-height:1.45;padding:7px 9px;border-radius:7px;max-width:420px;white-space:normal;
+box-shadow:0 4px 14px rgba(0,0,0,.22)}
+details.more{margin-top:12px}
+details.more>summary{cursor:pointer;font-size:13px;color:var(--ink2);padding:8px 0}
+details.more[open]>summary{margin-bottom:10px}
+table{border-collapse:collapse;width:100%;font-size:12.5px;background:var(--surface);
+border:1px solid var(--ring);border-radius:12px;overflow:hidden}
+th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+padding:10px;border-bottom:1px solid var(--grid);font-weight:600}
+td{padding:8px 10px;border-bottom:1px solid var(--grid);vertical-align:top}
+tr:last-child td{border-bottom:0}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:var(--ink2)}
+.num{font-variant-numeric:tabular-nums;text-align:right}
+.ok{color:var(--ink2)} .bad{color:var(--ink);font-weight:600}
+@media(max-width:840px){.tiles,.grid{grid-template-columns:1fr 1fr}.row{grid-template-columns:110px 1fr 66px}}
+@media(max-width:560px){.tiles,.grid{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+
+<h1>Routing evaluation</h1>
+<p class="meta"><code>data/routing_eval_golden_1k.jsonl</code> · policy <code>1.0</code>
+ · 1,000 cases</p>
+
+<div class="tiles">
+  <div class="tile"><div class="k">Route accuracy</div><div class="v">53.0%</div>
+    <div class="n">530 of 1,000 correct</div></div>
+  <div class="tile lead"><div class="k">DEEP recall</div><div class="v">22.8%</div>
+    <div class="n">431 needed DEEP, got QUICK</div></div>
+  <div class="tile"><div class="k">DEEP precision</div><div class="v">76.5%</div>
+    <div class="n">39 escalated unnecessarily</div></div>
+  <div class="tile"><div class="k">P95 latency</div><div class="v">0.47<span
+    style="font-size:16px"> ms</span></div><div class="n">p50 0.15 ms</div></div>
+</div>
+
+<h2>Confusion</h2>
+<div class="cmwrap">
+  <div class="cmh"></div><div class="cmh">predicted DEEP</div><div class="cmh">predicted QUICK</div>
+  <div class="cmh">should be&nbsp;DEEP</div><div class="cm" style="--w:0.295"><div class="cmn">127</div><div class="cml">caught</div></div><div class="cm" style="--w:1.000"><div class="cmn">431</div><div class="cml">missed</div></div>
+  <div class="cmh">should be&nbsp;QUICK</div><div class="cm" style="--w:0.090"><div class="cmn">39</div><div class="cml">over-escalated</div></div><div class="cm" style="--w:0.935"><div class="cmn">403</div><div class="cml">correct</div></div>
+</div>
+
+<h2>DEEP recall by dimension</h2>
+<p class="meta" style="margin:-6px 0 14px">Weakest first. A case carries one tag per dimension, so slices overlap between panels but never within one.</p>
+<div class="grid"><section class="panel"><h3>Risk feature</h3><p class="blurb">The router feature the case is built to exercise.</p><div class="bars"><div class="row" tabindex="0" data-tip="ambiguity · 97 cases · accuracy 35% · 2/64 DEEP caught · 62 missed · 1 false DEEP"><div class="rl">ambiguity</div><div class="track"><div class="fill" style="width:3.1%"></div></div><div class="rv"><b>3%</b><span class="sub">2/64</span></div></div><div class="row" tabindex="0" data-tip="none · 192 cases · accuracy 90% · 1/9 DEEP caught · 8 missed · 12 false DEEP"><div class="rl">none</div><div class="track"><div class="fill" style="width:11.1%"></div></div><div class="rv"><b>11%</b><span class="sub">1/9</span></div></div><div class="row" tabindex="0" data-tip="prompt_injection · 50 cases · accuracy 18% · 9/50 DEEP caught · 41 missed · 0 false DEEP"><div class="rl">prompt_injection</div><div class="track"><div class="fill" style="width:18.0%"></div></div><div class="rv"><b>18%</b><span class="sub">9/50</span></div></div><div class="row" tabindex="0" data-tip="evidence_gap · 167 cases · accuracy 29% · 27/142 DEEP caught · 115 missed · 3 false DEEP"><div class="rl">evidence_gap</div><div class="track"><div class="fill" style="width:19.0%"></div></div><div class="rv"><b>19%</b><span class="sub">27/142</span></div></div><div class="row" tabindex="0" data-tip="context_load · 73 cases · accuracy 51% · 8/40 DEEP caught · 32 missed · 4 false DEEP"><div class="rl">context_load</div><div class="track"><div class="fill" style="width:20.0%"></div></div><div class="rv"><b>20%</b><span class="sub">8/40</span></div></div><div class="row" tabindex="0" data-tip="multi_step · 196 cases · accuracy 61% · 17/80 DEEP caught · 63 missed · 14 false DEEP"><div class="rl">multi_step</div><div class="track"><div class="fill" style="width:21.2%"></div></div><div class="rv"><b>21%</b><span class="sub">17/80</span></div></div><div class="row" tabindex="0" data-tip="high_stakes · 292 cases · accuracy 26% · 65/278 DEEP caught · 213 missed · 2 false DEEP"><div class="rl">high_stakes</div><div class="track"><div class="fill" style="width:23.4%"></div></div><div class="rv"><b>23%</b><span class="sub">65/278</span></div></div><div class="row" tabindex="0" data-tip="tool_gap · 235 cases · accuracy 35% · 47/196 DEEP caught · 149 missed · 4 false DEEP"><div class="rl">tool_gap</div><div class="track"><div class="fill" style="width:24.0%"></div></div><div class="rv"><b>24%</b><span class="sub">47/196</span></div></div><div class="row" tabindex="0" data-tip="numerical · 169 cases · accuracy 50% · 29/108 DEEP caught · 79 missed · 5 false DEEP"><div class="rl">numerical</div><div class="track"><div class="fill" style="width:26.9%"></div></div><div class="rv"><b>27%</b><span class="sub">29/108</span></div></div><div class="row" tabindex="0" data-tip="freshness · 62 cases · accuracy 44% · 13/46 DEEP caught · 33 missed · 2 false DEEP"><div class="rl">freshness</div><div class="track"><div class="fill" style="width:28.3%"></div></div><div class="rv"><b>28%</b><span class="sub">13/46</span></div></div><div class="row" tabindex="0" data-tip="user_pressure · 54 cases · accuracy 30% · 16/54 DEEP caught · 38 missed · 0 false DEEP"><div class="rl">user_pressure</div><div class="track"><div class="fill" style="width:29.6%"></div></div><div class="rv"><b>30%</b><span class="sub">16/54</span></div></div><div class="row" tabindex="0" data-tip="citation_need · 43 cases · accuracy 49% · 21/43 DEEP caught · 22 missed · 0 false DEEP"><div class="rl">citation_need</div><div class="track"><div class="fill" style="width:48.8%"></div></div><div class="rv"><b>49%</b><span class="sub">21/43</span></div></div><div class="row" tabindex="0" data-tip="context_conflict · 38 cases · accuracy 50% · 18/35 DEEP caught · 17 missed · 2 false DEEP"><div class="rl">context_conflict</div><div class="track"><div class="fill" style="width:51.4%"></div></div><div class="rv"><b>51%</b><span class="sub">18/35</span></div></div></div></section><section class="panel"><h3>Source corpus</h3><p class="blurb">Which dataset the request came from.</p><div class="bars"><div class="row" tabindex="0" data-tip="drop · 107 cases · accuracy 64% · 3/36 DEEP caught · 33 missed · 6 false DEEP"><div class="rl">drop</div><div class="track"><div class="fill" style="width:8.3%"></div></div><div class="rv"><b>8%</b><span class="sub">3/36</span></div></div><div class="row" tabindex="0" data-tip="asqa · 86 cases · accuracy 69% · 4/29 DEEP caught · 25 missed · 2 false DEEP"><div class="rl">asqa</div><div class="track"><div class="fill" style="width:13.8%"></div></div><div class="rv"><b>14%</b><span class="sub">4/29</span></div></div><div class="row" tabindex="0" data-tip="crrag-conflict · 13 cases · accuracy 23% · 2/12 DEEP caught · 10 missed · 0 false DEEP"><div class="rl">crrag-conflict</div><div class="track"><div class="fill" style="width:16.7%"></div></div><div class="rv"><b>17%</b><span class="sub">2/12</span></div></div><div class="row" tabindex="0" data-tip="pubmedqa · 113 cases · accuracy 19% · 21/110 DEEP caught · 89 missed · 2 false DEEP"><div class="rl">pubmedqa</div><div class="track"><div class="fill" style="width:19.1%"></div></div><div class="rv"><b>19%</b><span class="sub">21/110</span></div></div><div class="row" tabindex="0" data-tip="musique · 101 cases · accuracy 55% · 11/50 DEEP caught · 39 missed · 6 false DEEP"><div class="rl">musique</div><div class="track"><div class="fill" style="width:22.0%"></div></div><div class="rv"><b>22%</b><span class="sub">11/50</span></div></div><div class="row" tabindex="0" data-tip="hotpot-qa · 125 cases · accuracy 68% · 9/39 DEEP caught · 30 missed · 10 false DEEP"><div class="rl">hotpot-qa</div><div class="track"><div class="fill" style="width:23.1%"></div></div><div class="rv"><b>23%</b><span class="sub">9/39</span></div></div><div class="row" tabindex="0" data-tip="streamingqa · 103 cases · accuracy 67% · 10/42 DEEP caught · 32 missed · 2 false DEEP"><div class="rl">streamingqa</div><div class="track"><div class="fill" style="width:23.8%"></div></div><div class="rv"><b>24%</b><span class="sub">10/42</span></div></div><div class="row" tabindex="0" data-tip="casehold · 99 cases · accuracy 27% · 22/92 DEEP caught · 70 missed · 2 false DEEP"><div class="rl">casehold</div><div class="track"><div class="fill" style="width:23.9%"></div></div><div class="rv"><b>24%</b><span class="sub">22/92</span></div></div><div class="row" tabindex="0" data-tip="squad · 118 cases · accuracy 70% · 11/39 DEEP caught · 28 missed · 7 false DEEP"><div class="rl">squad</div><div class="track"><div class="fill" style="width:28.2%"></div></div><div class="rv"><b>28%</b><span class="sub">11/39</span></div></div><div class="row" tabindex="0" data-tip="finqa · 95 cases · accuracy 38% · 26/85 DEEP caught · 59 missed · 0 false DEEP"><div class="rl">finqa</div><div class="track"><div class="fill" style="width:30.6%"></div></div><div class="rv"><b>31%</b><span class="sub">26/85</span></div></div><div class="row" tabindex="0" data-tip="retrievalqa · 40 cases · accuracy 55% · 8/24 DEEP caught · 16 missed · 2 false DEEP"><div class="rl">retrievalqa</div><div class="track"><div class="fill" style="width:33.3%"></div></div><div class="rv"><b>33%</b><span class="sub">8/24</span></div></div></div></section></div>
+
+
+<h2>Cases</h2>
+<details><summary style="cursor:pointer;font-size:13px;color:var(--ink2);padding:8px 0">
+Show all 1,000 predictions</summary>
+<table><thead><tr><th>Case</th><th>Expected</th><th>Predicted</th><th>Result</th>
+<th class=num>Risk</th><th>Reason codes</th></tr></thead><tbody><tr><td class=mono>crrag_conflict_test_43</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.560</td><td class=mono>HIGH_STAKES, FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_shuffle_00851</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00730</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_3877</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>crrag_conflict_test_9</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_5132</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.318</td><td class=mono>HIGH_STAKES, NUMERICAL_REASONING, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_shuffle_00857</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00166</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_35766</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.229</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>crrag_conflict_test_89</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_59138</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.383</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_conflict_00892</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_36831</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>crrag_conflict_test_59</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_325</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_transform_wrap_00477</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.110</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_tool_variant_00435</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_5239</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.110</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_citation_00192</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.012</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00332</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_18256</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.430</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>drop_train_11511</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_16009</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.012</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_02242</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.029</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00252</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.445</td><td class=mono>HIGH_STAKES, MULTI_STEP_REASONING, EVIDENCE_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>hotpot_qa_train_83103</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00167</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00629</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.386</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>squad_train_11553</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00250</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_01424</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.186</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>asqa_dev_407</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_01077</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_79328</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_886</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00054</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.033</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_ambiguity_00679</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.026</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_01255</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>squad_validation_4276</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_628</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.187</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_ambiguity_00320</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.091</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>crrag_conflict_test_81</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>musique_validation_742</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.027</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_912</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_2117</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>crrag_conflict_test_39</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>crrag_conflict_test_2</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_16116</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_60394</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00295</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00516</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.055</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_01045</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.089</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_tool_variant_00017</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_295</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_user_pressure_00033</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_25</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_1675</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00243</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.040</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_1859</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.280</td><td class=mono>HIGH_STAKES, NUMERICAL_REASONING, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>casehold_train_34384</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.046</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_883</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_104</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00594</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_53095</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.024</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_18696</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00668</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.042</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00608</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.066</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>synth_user_pressure_00561</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.132</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>squad_train_14540</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00368</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_4321</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.083</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>asqa_train_127</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>crrag_conflict_test_15</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00357</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00634</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_validation_8364</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_6249</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.376</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_citation_00510</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.187</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>pubmedqa_train_61</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00442</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.026</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00106</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.045</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_01065</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.014</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_28812</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00498</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00317</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.087</td><td class=mono>USER_PRESSURE, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>asqa_train_3942</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_4542</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00288</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.081</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>finqa_train_5965</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.553</td><td class=mono>HIGH_STAKES, FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>retrievalqa_train_1150</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>casehold_train_17580</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00272</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.194</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_injection_00235</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.070</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>finqa_train_2159</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.094</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>hotpot_qa_train_79936</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.455</td><td class=mono>FRESHNESS_REQUIRED, MULTI_STEP_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>asqa_train_382</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.041</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00674</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00660</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_7838</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.229</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>finqa_train_2479</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.024</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_793</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.188</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_tool_variant_00237</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00636</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.070</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>asqa_dev_59</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00013</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00236</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_10874</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00387</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.187</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>retrievalqa_train_525</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_injection_00083</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00337</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.042</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>pubmedqa_train_914</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_01044</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_12103</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00172</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.440</td><td class=mono>HIGH_STAKES, CITATIONS_REQUESTED, NUMERICAL_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_conflict_00859</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.247</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_injection_02156</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.049</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00434</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.229</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>casehold_test_3136</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.193</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_citation_00481</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.013</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00118</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00728</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_527</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00591</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.254</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>drop_train_75588</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_391</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_01442</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00202</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00059</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00452</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.422</td><td class=mono>HIGH_STAKES, EVIDENCE_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>musique_train_7733</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.015</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_25600</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00376</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_12160</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>crrag_conflict_test_88</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>crrag_conflict_test_34</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_594</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_01473</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00515</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.051</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_7401</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.014</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_56586</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_750</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_9204</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_11775</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_1251</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_context_removal_01188</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00157</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_35210</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_337</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_user_pressure_00403</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.043</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_72074</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_616</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_36</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00581</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_injection_01113</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.023</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00376</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00719</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00392</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.234</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_transform_wrap_00510</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.028</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00365</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.040</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_01420</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.478</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, EVIDENCE_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>asqa_train_3369</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_32397</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>crrag_conflict_test_64</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_50350</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00528</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00437</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00103</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_11587</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00028</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00750</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.070</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>synth_user_pressure_00606</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.060</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_01236</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00543</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.291</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_injection_00237</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_14049</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.013</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_241</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_938</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00819</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00333</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.229</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>casehold_train_16097</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.045</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00236</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.044</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_33667</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_26623</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.023</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_581</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.040</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_context_shuffle_00703</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.089</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>finqa_train_2286</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.104</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_transform_wrap_00136</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.040</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_999</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00543</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_injection_02387</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.150</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>pubmedqa_train_706</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_14825</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_01124</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.014</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00372</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00874</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_16924</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00506</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_51391</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_01139</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.447</td><td class=mono>FRESHNESS_REQUIRED, MULTI_STEP_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>squad_train_2361</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_4994</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00501</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.191</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_shuffle_00952</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00145</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00120</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_11538</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.048</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00052</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_4306</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.135</td><td class=mono>NUMERICAL_REASONING, LONG_CONTEXT</td></tr>
+<tr><td class=mono>retrievalqa_train_182</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.041</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00509</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.425</td><td class=mono>HIGH_STAKES, CITATIONS_REQUESTED, MULTI_STEP_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>retrievalqa_train_704</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_ambiguity_00661</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.064</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>synth_citation_00196</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_14224</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00333</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_700</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_16897</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_6911</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_30719</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00760</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_604</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>streamingqa_test_15488</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.028</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00784</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.043</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00043</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.234</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>pubmedqa_train_513</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_21904</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_48131</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.046</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00503</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_7431</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.255</td><td class=mono>CITATIONS_REQUESTED, MULTI_STEP_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>musique_train_18231</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.033</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>squad_train_8988</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00913</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.012</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_33054</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00011</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.238</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_removal_01027</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00069</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.381</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_removal_00648</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00858</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.108</td><td class=mono>PROMPT_INJECTION_RISK, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>casehold_train_9286</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_6010</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.025</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00194</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_8960</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_736</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_29330</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_909</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_01158</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.415</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>pubmedqa_train_729</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00542</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_41558</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_660</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00026</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00735</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.028</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_710</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_25149</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_02277</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.256</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_user_pressure_00388</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_79404</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.377</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_injection_02390</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00479</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_4197</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_10731</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.023</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00763</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00768</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00755</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.253</td><td class=mono>FRESHNESS_REQUIRED, MULTI_STEP_REASONING, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_transform_wrap_00054</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.070</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>asqa_train_2954</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_5569</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.023</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_62200</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_3929</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00379</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00872</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_1478</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00614</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.075</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>synth_injection_02360</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_16092</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00657</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.045</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_781</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_10996</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_01032</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00060</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_test_2815</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.048</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00471</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_5024</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.278</td><td class=mono>HIGH_STAKES, NUMERICAL_REASONING, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>streamingqa_test_13107</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.020</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00260</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00274</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.088</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_context_removal_00254</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.060</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>synth_tool_variant_00054</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.189</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_removal_00248</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_test_574</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.253</td><td class=mono>CITATIONS_REQUESTED, MULTI_STEP_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>squad_train_7762</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_14740</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.222</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_removal_00295</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_37709</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_56</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00515</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00534</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_548</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_33464</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00450</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00166</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.018</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00292</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.044</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_27085</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.232</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_transform_wrap_00041</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00361</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.015</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00155</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.224</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>asqa_dev_304</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_4845</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_280</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>squad_validation_122</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_3598</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00178</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_14580</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>musique_validation_1392</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00255</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.393</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>asqa_train_1573</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_15176</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_2397</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_896</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_290</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.048</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_context_shuffle_00096</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.043</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_922</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.382</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>streamingqa_validation_8386</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_36906</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_14460</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_743</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00423</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.016</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00565</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00508</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_27627</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00053</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.012</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_516</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.231</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_citation_00478</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.012</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00236</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_532</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_21204</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_01119</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.110</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_tool_variant_00136</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_31114</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00417</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.235</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_removal_00245</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00188</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.375</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_transform_wrap_00455</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.248</td><td class=mono>HIGH_STAKES, MULTI_STEP_REASONING, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_user_pressure_00528</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.547</td><td class=mono>HIGH_STAKES, FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>squad_train_26080</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_2878</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_1222</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_user_pressure_00689</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00405</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.024</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_25219</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.069</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>synth_context_removal_00819</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.384</td><td class=mono>HIGH_STAKES, EVIDENCE_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>casehold_train_8008</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_46120</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_validation_612</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.114</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_context_shuffle_01101</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_3408</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_57588</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.014</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00520</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_638</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00112</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.233</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>asqa_dev_360</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_690</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.040</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_transform_wrap_00003</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.069</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>streamingqa_test_14722</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00425</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00172</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.045</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00536</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.222</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_removal_01350</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00841</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00605</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.027</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_233</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_43</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00378</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.049</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00891</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_01229</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_3167</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.026</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_16171</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_7496</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00474</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.253</td><td class=mono>CITATIONS_REQUESTED, MULTI_STEP_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>squad_train_60027</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.015</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00137</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.191</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>musique_validation_1450</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.052</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_404</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.187</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_injection_02005</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.056</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00870</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00522</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00748</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00446</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.267</td><td class=mono>CITATIONS_REQUESTED, MULTI_STEP_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>asqa_dev_868</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_77397</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_974</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_61744</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_14781</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.402</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>pubmedqa_train_607</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00090</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.060</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>synth_citation_00568</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.191</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_conflict_01138</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.249</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_removal_00306</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00041</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.049</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_15668</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_56161</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_4672</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_591</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_464</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00824</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.107</td><td class=mono>PROMPT_INJECTION_RISK, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>hotpot_qa_validation_2645</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_15141</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_900</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_887</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00119</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.167</td><td class=mono>MULTI_STEP_REASONING, NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>finqa_train_5581</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.104</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_injection_01050</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_test_3330</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_1147</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>casehold_train_588</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_28347</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_603</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00114</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_01790</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.068</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>retrievalqa_train_941</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.383</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>squad_train_12957</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00099</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_191</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00582</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00391</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_01380</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.189</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>musique_validation_1738</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.024</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_validation_4094</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.050</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_358</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_964</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00184</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.415</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>casehold_train_3532</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.046</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00295</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_881</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_74574</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_562</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00217</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.044</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00470</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.012</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00233</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_334</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>squad_train_60808</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00086</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_940</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.383</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>musique_train_13580</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_01323</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00287</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_55791</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_validation_137</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.095</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>drop_train_12544</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_45056</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.058</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_29369</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00531</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00385</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00375</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_13</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_4039</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00558</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00059</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.360</td><td class=mono>HIGH_STAKES, CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_transform_wrap_00721</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.110</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>asqa_train_3373</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_1198</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_conflict_01164</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.234</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_removal_00634</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_18980</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_01106</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.478</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, EVIDENCE_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>asqa_dev_594</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00173</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_01167</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.018</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00483</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.248</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_transform_wrap_00656</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.040</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00700</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.045</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_11709</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_1069</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>finqa_train_5635</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.016</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_72100</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>musique_validation_1731</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.062</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_460</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_8278</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00579</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.050</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00165</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.091</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_conflict_00275</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.240</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>drop_validation_8900</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_39</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.110</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_conflict_00494</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_transform_wrap_00080</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.155</td><td class=mono>MULTI_STEP_REASONING, NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>hotpot_qa_validation_7277</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00231</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.025</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_32348</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00215</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.045</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_5050</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00456</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.049</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00211</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.256</td><td class=mono>HIGH_STAKES, NUMERICAL_REASONING, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>retrievalqa_train_1193</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_tool_variant_00707</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.013</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_876</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_18973</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_130</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.192</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>drop_validation_5369</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.023</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_14490</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.013</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00468</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00397</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.114</td><td class=mono>USER_PRESSURE, LONG_CONTEXT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>retrievalqa_train_928</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.382</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>casehold_train_613</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.045</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_16720</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.014</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_23892</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00116</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00747</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.040</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00794</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00287</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.232</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_tool_variant_00574</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.186</td><td class=mono>FRESHNESS_REQUIRED, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>squad_train_17819</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00449</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_8542</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.049</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00431</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.253</td><td class=mono>CITATIONS_REQUESTED, MULTI_STEP_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>musique_train_10313</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00451</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.420</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>casehold_validation_782</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.045</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_01012</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00038</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>musique_validation_363</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.380</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_ambiguity_00095</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00123</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.195</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_conflict_00956</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.236</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_removal_01352</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_66037</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.040</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00193</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00470</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.070</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>asqa_train_1874</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_7586</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00315</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_01347</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.478</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, EVIDENCE_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_injection_01371</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.093</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>finqa_train_4390</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.024</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_59848</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00176</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_733</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00445</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.413</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>hotpot_qa_train_88727</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.266</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_ambiguity_00483</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.070</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>synth_conflict_00023</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.254</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_tool_variant_00043</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_16110</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_824</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00692</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.127</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_user_pressure_00437</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.420</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>asqa_train_1795</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_5838</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.025</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00347</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00652</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.203</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_tool_variant_00409</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_45</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_1854</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.112</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_context_removal_01028</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.290</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, EVIDENCE_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_injection_01740</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00248</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_4105</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_2193</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_3971</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_validation_566</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.096</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>musique_train_9707</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00682</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_test_2804</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.048</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_1125</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00837</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_667</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00080</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.091</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_tool_variant_00432</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_1811</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00430</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_947</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_02383</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.070</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>synth_user_pressure_00682</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.386</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>finqa_validation_320</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.067</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_90</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_validation_4051</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00713</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.016</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00347</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.080</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>synth_tool_variant_00112</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_301</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_61818</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00229</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.043</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_tool_variant_00749</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00089</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.060</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00042</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_35414</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.456</td><td class=mono>FRESHNESS_REQUIRED, MULTI_STEP_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>squad_train_55579</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00769</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_48406</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00322</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.044</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_15439</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_13470</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_01062</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.418</td><td class=mono>HIGH_STAKES, CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_transform_wrap_00791</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_668</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_19543</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.013</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00543</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.188</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_transform_wrap_00561</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.083</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>musique_train_3564</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>squad_validation_7340</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00075</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.128</td><td class=mono>USER_PRESSURE, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>pubmedqa_train_491</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_1866</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.193</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>hotpot_qa_train_48032</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00684</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.048</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_235</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00983</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00330</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_28568</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.027</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00155</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00108</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00182</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.028</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00291</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00740</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00946</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.241</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_user_pressure_00144</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_53782</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.032</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_957</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00930</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.329</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, EVIDENCE_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>streamingqa_test_319</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00739</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_01017</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.234</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>musique_train_1047</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.012</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_27104</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.017</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00390</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.073</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>hotpot_qa_train_82815</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_01562</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.050</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00134</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00421</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_596</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.257</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>finqa_validation_738</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_44501</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00672</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.233</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>casehold_train_6651</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_957</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.435</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>asqa_train_3630</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00133</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_577</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_5599</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.150</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_context_removal_00176</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00062</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_343</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_20023</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.046</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_33647</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_validation_493</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.095</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>squad_train_10319</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00237</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.047</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_injection_00179</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_validation_1953</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.046</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_56264</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.033</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_citation_00007</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.023</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00037</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_51665</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_4177</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00362</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_01007</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.237</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>musique_train_1565</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_14243</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_709</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_test_3229</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_01125</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.237</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_injection_01911</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_25176</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_5236</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.287</td><td class=mono>HIGH_STAKES, NUMERICAL_REASONING, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>streamingqa_test_32480</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.024</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00319</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.041</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_02416</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.107</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_user_pressure_00659</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.111</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>pubmedqa_train_828</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00412</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.058</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>synth_citation_00553</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.196</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_removal_00637</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00468</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00024</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.015</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_15657</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00062</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.104</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>casehold_train_23580</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00243</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.065</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>squad_train_22250</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_11154</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>musique_validation_828</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00170</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.046</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00041</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.025</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_3130</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_01046</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00050</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.479</td><td class=mono>FRESHNESS_REQUIRED, NUMERICAL_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>asqa_train_1844</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.013</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_30284</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.071</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>drop_train_47502</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00398</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00175</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_10125</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00356</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_5022</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.332</td><td class=mono>HIGH_STAKES, NUMERICAL_REASONING, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>pubmedqa_train_327</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_29276</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_11318</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.048</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_3170</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00418</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.239</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>drop_train_11576</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00326</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_01876</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_3446</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.190</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>drop_train_74475</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_44710</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00235</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.158</td><td class=mono>MULTI_STEP_REASONING, NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>streamingqa_validation_3046</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.033</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_tool_variant_00291</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_01066</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.050</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_tool_variant_00282</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00585</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_5441</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00055</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.056</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>synth_context_shuffle_00183</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_570</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00765</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.240</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_ambiguity_00480</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.090</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>synth_ambiguity_00071</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.067</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>synth_tool_variant_00026</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.050</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_82212</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00013</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.101</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_context_shuffle_01116</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_27940</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.025</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00124</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00351</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_962</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00760</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.068</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_702</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_875</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00434</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.505</td><td class=mono>FRESHNESS_REQUIRED, CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_tool_variant_00695</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_28766</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.381</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_transform_wrap_00782</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.231</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>hotpot_qa_train_41681</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>squad_validation_1540</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00083</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_00905</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.377</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>finqa_train_3848</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.104</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>finqa_train_3836</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.092</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_user_pressure_00587</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.069</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>casehold_test_1769</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_18140</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.013</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00305</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.127</td><td class=mono>USER_PRESSURE, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_citation_00078</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.188</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_conflict_00280</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.235</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>drop_train_56266</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.033</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>hotpot_qa_train_48307</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_683</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00439</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.511</td><td class=mono>HIGH_STAKES, NUMERICAL_REASONING, EVIDENCE_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_user_pressure_00331</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.057</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_validation_275</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.190</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>streamingqa_validation_4428</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00144</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.193</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>pubmedqa_train_574</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_01011</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00357</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.068</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>synth_context_shuffle_00140</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.065</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>pubmedqa_train_399</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.225</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_conflict_00637</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.189</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>casehold_train_12909</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00087</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.059</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>synth_context_shuffle_01123</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00405</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.445</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, LONG_CONTEXT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_user_pressure_00643</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_01673</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.014</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00422</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.014</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_61294</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.018</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_11860</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00031</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00315</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_3790</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_01292</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00849</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.302</td><td class=mono>HIGH_STAKES, NUMERICAL_REASONING, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_transform_wrap_00619</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.046</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_31786</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.027</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_532</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00868</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.072</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>synth_context_removal_00820</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>drop_validation_3129</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.023</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_577</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00464</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.452</td><td class=mono>FRESHNESS_REQUIRED, CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_removal_01477</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00073</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.253</td><td class=mono>CITATIONS_REQUESTED, MULTI_STEP_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_citation_00371</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_01034</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.244</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_user_pressure_00652</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00028</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.061</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00247</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.041</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_29871</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_19607</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.046</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00471</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.199</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_conflict_01136</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.216</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_transform_wrap_00402</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.045</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00112</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.046</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_31840</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00030</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.069</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>squad_train_9473</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_69569</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_449</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_689</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00666</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.046</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_875</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.442</td><td class=mono>FRESHNESS_REQUIRED, MULTI_STEP_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>squad_train_83897</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00546</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.095</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_citation_00486</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_3549</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.027</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_02462</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_1347</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.277</td><td class=mono>HIGH_STAKES, NUMERICAL_REASONING, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>squad_validation_7334</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00868</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00266</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.432</td><td class=mono>FRESHNESS_REQUIRED, NUMERICAL_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_tool_variant_00732</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00265</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_3726</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.108</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_transform_wrap_00383</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.040</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_5195</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_validation_5312</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.028</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00698</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_79348</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.013</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_952</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00295</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00044</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.263</td><td class=mono>CITATIONS_REQUESTED, MULTI_STEP_REASONING, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>casehold_train_1715</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_677</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_22458</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.033</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_context_removal_01157</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_16911</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.013</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_01173</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.051</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_18191</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.382</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>squad_train_7355</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00406</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_46588</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_injection_01494</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.381</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>casehold_test_2332</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_76179</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.043</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00330</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00178</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.062</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>casehold_train_17699</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.231</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_removal_00523</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00086</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00714</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00049</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.046</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_6380</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.083</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>musique_train_18851</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>synth_transform_wrap_00307</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_11309</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00288</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.106</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>pubmedqa_train_413</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00445</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_23842</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_14163</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_80923</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.012</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00268</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00421</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00178</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.389</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>musique_validation_1602</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.017</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_53928</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_00014</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_465</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>drop_validation_7545</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.090</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>finqa_train_3196</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_81967</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00504</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.377</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_tool_variant_00171</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.239</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_transform_wrap_00267</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_21538</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00043</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.045</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00139</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.040</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_26989</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.069</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>pubmedqa_train_278</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_validation_2202</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_3628</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_716</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.045</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_3597</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.106</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_transform_wrap_00676</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_train_34146</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.013</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_16968</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00532</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_6652</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_938</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_26313</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.026</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00392</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.189</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_user_pressure_00238</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_citation_00580</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.201</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>finqa_train_5936</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.024</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_18651</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00396</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.023</td><td class=mono></td></tr>
+<tr><td class=mono>casehold_train_9954</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_732</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00435</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>hotpot_qa_validation_3318</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_15819</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_24521</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00006</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.083</td><td class=mono>MULTI_STEP_REASONING</td></tr>
+<tr><td class=mono>hotpot_qa_train_68290</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.024</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00548</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>pubmedqa_train_889</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00046</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.395</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>casehold_train_9953</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.045</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00368</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.237</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_citation_00444</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00727</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.258</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_shuffle_00242</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00596</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.226</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_context_removal_00923</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_01143</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_validation_7508</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.089</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>streamingqa_validation_629</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.030</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00746</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.240</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_conflict_00648</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.276</td><td class=mono>CONTEXT_CONFLICT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>finqa_train_2230</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>squad_train_82711</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_27686</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_7547</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_937</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00686</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_18498</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.056</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_5479</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.112</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_tool_variant_00078</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.013</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_2259</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.197</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>musique_train_18781</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.060</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_validation_9862</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_3778</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_01120</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_18315</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.381</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_ambiguity_00162</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>crrag_conflict_test_65</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.043</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_18054</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_19129</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.018</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_7209</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>retrievalqa_train_501</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.043</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>synth_ambiguity_00534</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.080</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>musique_validation_1643</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00667</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.057</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>retrievalqa_train_158</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.383</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_ambiguity_00562</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.056</td><td class=mono>AMBIGUOUS_QUERY</td></tr>
+<tr><td class=mono>finqa_train_1678</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.128</td><td class=mono>NUMERICAL_REASONING, LONG_CONTEXT</td></tr>
+<tr><td class=mono>asqa_train_1787</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_23138</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_844</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.004</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00262</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00892</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_27614</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.024</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_18939</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.062</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00612</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_5958</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.016</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_21496</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_1825</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.280</td><td class=mono>HIGH_STAKES, NUMERICAL_REASONING, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>streamingqa_test_20945</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00248</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.037</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>streamingqa_validation_951</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00265</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.017</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_2095</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.005</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00394</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.384</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>streamingqa_test_14752</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.212</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_conflict_01056</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.264</td><td class=mono>CONTEXT_CONFLICT, LONG_CONTEXT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>asqa_train_2865</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00365</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.013</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_5926</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.028</td><td class=mono></td></tr>
+<tr><td class=mono>drop_train_63049</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.011</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_00842</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_1432</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.007</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_validation_4271</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_train_1783</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_removal_01276</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.000</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_validation_759</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.106</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_tool_variant_00771</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.106</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_conflict_01191</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.606</td><td class=mono>FRESHNESS_REQUIRED, CONTEXT_CONFLICT, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_ambiguity_00477</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.021</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00315</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.097</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>streamingqa_test_13327</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_9943</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.383</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_citation_00039</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.010</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_678</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_6682</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_19134</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.243</td><td class=mono>CITATIONS_REQUESTED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>finqa_train_713</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.098</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>streamingqa_test_9575</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.205</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>squad_train_86293</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.009</td><td class=mono></td></tr>
+<tr><td class=mono>synth_user_pressure_00094</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_5580</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_1404</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.142</td><td class=mono>NUMERICAL_REASONING</td></tr>
+<tr><td class=mono>synth_tool_variant_00686</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.063</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_2665</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.016</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_01176</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.213</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_user_pressure_00375</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00677</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>synth_context_shuffle_01037</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.008</td><td class=mono></td></tr>
+<tr><td class=mono>asqa_dev_257</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.003</td><td class=mono></td></tr>
+<tr><td class=mono>streamingqa_test_28964</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.002</td><td class=mono></td></tr>
+<tr><td class=mono>synth_ambiguity_00285</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.042</td><td class=mono>LONG_CONTEXT</td></tr>
+<tr><td class=mono>streamingqa_test_9422</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.001</td><td class=mono></td></tr>
+<tr><td class=mono>finqa_train_5677</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.200</td><td class=mono>HIGH_STAKES, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_tool_variant_00675</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.018</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_16409</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.006</td><td class=mono></td></tr>
+<tr><td class=mono>synth_conflict_00159</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.653</td><td class=mono>FRESHNESS_REQUIRED, CONTEXT_CONFLICT, TOOL_GAP, LONG_CONTEXT, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_user_pressure_00545</td><td>DEEP</td><td>DEEP</td><td class="ok">PASS</td><td class=num>0.375</td><td class=mono>FRESHNESS_REQUIRED, TOOL_GAP, POLICY_OVERRIDE</td></tr>
+<tr><td class=mono>synth_citation_00322</td><td>DEEP</td><td>QUICK</td><td class="bad">FAIL</td><td class=num>0.047</td><td class=mono></td></tr>
+<tr><td class=mono>musique_train_19072</td><td>QUICK</td><td>QUICK</td><td class="ok">PASS</td><td class=num>0.022</td><td class=mono></td></tr>
+<tr><td class=mono>synth_tool_variant_00427</td><td>QUICK</td><td>DEEP</td><td class="bad">FAIL</td><td class=num>0.193</td><td class=mono>FRESHNESS_REQUIRED, POLICY_OVERRIDE</td></tr></tbody></table>
+</details>
+
+</div></body></html>

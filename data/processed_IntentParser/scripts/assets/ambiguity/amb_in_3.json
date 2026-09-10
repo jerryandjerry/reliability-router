@@ -1,0 +1,207 @@
+[
+ {
+  "id": "musique_train_18949",
+  "query": "Régis Ghesquière died in a town with an Arrondissement in Country A. What term is used in Country A and the country the Women's Euro 2017 is being held to refer to an institution like a German Fachhochschule?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_train_19016",
+  "query": "When did Muslim armies invade the country containing Al-Mastumah and the country of the man who followed the reign of Al-Mu'tamid?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_train_19099",
+  "query": "In what year did voters from the state of the season five contestant most successful after the show vote again for a candidate from Mayor Turner's party?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_train_19911",
+  "query": "An actor in Nowhere to Run is a national of a European country. That country's King Albert I lived during a major war that Italy joined in what year?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_136",
+  "query": "What is the river that the Kettle Generating Station is located on a tributary of?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_728",
+  "query": "How many books were said to have been written by the person who proposed explanations for the origins of earthquakes and the formation of mountains?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_828",
+  "query": "When did the person who took over the territory and made it part of their empire die?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_1312",
+  "query": "What does SEAL stand for in the military group that is part of the branch that operates the USS Askari?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_1488",
+  "query": "What label was bought by the company which, along with ABC and the network which hosts Westinghouse Playhouse, is the other major broadcaster based in NY?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_1554",
+  "query": "When was the start of the battle of the birthplace of the performer of III?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_1581",
+  "query": "Why did Roncalli leave the place of death of the maker of The Gozzi Altarpiece?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_1879",
+  "query": "who has had the most hits in the league that includes the team that has played the most games of the type played just before the league MVP is awarded?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_1909",
+  "query": "What is the seat of the county sharing a border with the county in which Miller Electric is headquartered?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_1953",
+  "query": "The German priest, who wanted to reform the religious denomination now the largest in the US, preached a sermon on Marian devotion soon before his death in which German state?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_1962",
+  "query": "Where is the district that the person who wanted to reform and address Edward Egan's religion preached a sermon on Marian devotion before his death located?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_1966",
+  "query": "The German priest, who wanted Joseph Strickland's religious denomination to reform, preached a sermon on Marian devotion soon before his death in what German state?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_1969",
+  "query": "Where is the district that the person who wanted to reform and address the religion that practices candidacy preach a sermon on Marian devotion before his death located?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_2322",
+  "query": "When did the people who controlled New York before it became an English colony, come to the country where John Kerry's yacht was built?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_validation_2367",
+  "query": "What dissolved the privileges of the birth empire of Alexey Brodovitch, the kingdom acquiring some Thuringian territory or Habsburg Monarchy?",
+  "source": "musique"
+ },
+ {
+  "id": "drop_train_608",
+  "query": "What play did Jay Cutler get injured?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_3534",
+  "query": "According to the American Community Survey, which was larger, the median household income or the median family income?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_4681",
+  "query": "How many years spanned from the massive drop of population in the lands controlled by the Chisinau?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_6724",
+  "query": "How many points ahead were the Broncos with 4:14 left in the game?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_6846",
+  "query": "How many more touchdowns did Peyton Manning have compared to Alex Smith in the first half of play?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_7122",
+  "query": "how many did the patriots lead in the first?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_7500",
+  "query": "How many yards was the shortest touchdown?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_9925",
+  "query": "How many more of the Asian migrants were Bangladeshis than Pakistanis or Filipinos?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_11318",
+  "query": "How many yards difference was Robbie Gould’s first field goal compared to David Akers’s first field goal?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_11463",
+  "query": "What two major events did the Dutch do in 1641?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_12051",
+  "query": "How many touchdowns did Scott Candler have before halftime?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_12547",
+  "query": "How many incomplete passes did Tyler Thigpen throw?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_13642",
+  "query": "How many yards did all successful field goals combine for?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_14570",
+  "query": "Who scored the most points in the first quarter?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_16405",
+  "query": "How many percent of people were not Presbyterian/Congregational in 2000?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_18187",
+  "query": "How many games had the colts lost this season?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_20010",
+  "query": "How many people larger was the average family size than household size?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_22689",
+  "query": "How many persons are in the labour force?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_25200",
+  "query": "How many fourth downs did the Broncos successfully complete?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_25238",
+  "query": "How many years was Hussain Hotak the ruler of the Hotak dynasty?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_27937",
+  "query": "How many touchdown catches did Brandon Marshall have?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_29021",
+  "query": "How many more dollars was the median income of a family household than the median income of a male?",
+  "source": "drop"
+ }
+]

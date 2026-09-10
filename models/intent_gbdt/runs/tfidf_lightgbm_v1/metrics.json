@@ -1,0 +1,23 @@
+{
+  "family": "tfidf",
+  "name": "tfidf_lightgbm",
+  "version": "v1",
+  "library": "lightgbm",
+  "threshold": 0.5,
+  "params": {
+    "n_estimators": 603,
+    "learning_rate": 0.04421291893432149,
+    "num_leaves": 183,
+    "min_child_samples": 10,
+    "subsample": 0.8333833577228338,
+    "colsample_bytree": 0.7694465087327116,
+    "reg_lambda": 0.008032702926466745,
+    "reg_alpha": 0.0035852205200166674
+  },
+  "search_cv_accuracy": 0.7766,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "train_cases": 9000,
+  "vectorizer": "TfidfVectorizer",
+  "max_features": 50000,
+  "training_set_accuracy": 0.996
+}

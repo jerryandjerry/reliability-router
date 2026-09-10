@@ -1,0 +1,248 @@
+[
+ {
+  "id": "musique_train_4802",
+  "query": "who'd he end up writing that one for",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_4989",
+  "query": "biggest one in that county?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_5674",
+  "query": "is there something that covers how they made it",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_6765",
+  "query": "when did it become one",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_6943",
+  "query": "and who's he married to",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_9033",
+  "query": "what day did they announce the new ones",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_9449",
+  "query": "现在谁当总理啊",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_train_9943",
+  "query": "health minister there right now?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_10915",
+  "query": "since when have regular people been allowed to visit",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_12593",
+  "query": "whats the highest point in the state hes from",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_12880",
+  "query": "the fighting there, between who exactly",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_13212",
+  "query": "ok and when did the first store open in that state",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_13795",
+  "query": "when did it get split into 19",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_14254",
+  "query": "what do they call those schools over there",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_14734",
+  "query": "who's the one right next to it named after",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_14760",
+  "query": "which country",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_14833",
+  "query": "它们一般几月份飞过去",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_train_15187",
+  "query": "release date on that track?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_15244",
+  "query": "and when did they take it over",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_15428",
+  "query": "what was his actual title over there, i forget the exact wording",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_15595",
+  "query": "when'd they officially convert",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_15804",
+  "query": "which part of the country is that in",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_15887",
+  "query": "is it in the same one or not",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_16458",
+  "query": "那边是哪年开始推那套教育制度的",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_train_16619",
+  "query": "当时投反对票的占多少",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_train_16763",
+  "query": "the town right next door, which country",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_16956",
+  "query": "population?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_17048",
+  "query": "who was the first emperor there",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_17350",
+  "query": "when did that name actually stick over there",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_17490",
+  "query": "what kind of album is it, like live or studio or what",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_17589",
+  "query": "which one shares its name with the stadium",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18342",
+  "query": "the county for his historic site?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18451",
+  "query": "named after what",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18460",
+  "query": "这家店最早是谁开的",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_train_18527",
+  "query": "which country is that province actually in",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18584",
+  "query": "and where exactly did it go down",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18665",
+  "query": "who tried setting up a colony there and couldnt make it work",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18693",
+  "query": "whats the rate there",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18696",
+  "query": "那个国家呢 什么时候的事",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_train_18785",
+  "query": "where did he end up dying",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18871",
+  "query": "besides that one who else recognized them early on",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ }
+]

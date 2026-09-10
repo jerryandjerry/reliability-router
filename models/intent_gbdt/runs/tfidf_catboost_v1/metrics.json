@@ -1,0 +1,20 @@
+{
+  "family": "tfidf",
+  "name": "tfidf_catboost",
+  "version": "v1",
+  "library": "catboost",
+  "threshold": 0.5,
+  "params": {
+    "iterations": 552,
+    "learning_rate": 0.04429649570464297,
+    "depth": 8,
+    "l2_leaf_reg": 26.512259742974308,
+    "random_strength": 0.03417952912061012
+  },
+  "search_cv_accuracy": 0.7907,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "train_cases": 9000,
+  "vectorizer": "TfidfVectorizer",
+  "max_features": 50000,
+  "training_set_accuracy": 0.8923
+}

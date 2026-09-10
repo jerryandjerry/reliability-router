@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      RR_PROVIDER: ${RR_PROVIDER:-mock}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      RR_OPENAI_MODEL: ${RR_OPENAI_MODEL:-gpt-5.5}

@@ -1,0 +1,422 @@
+[
+ {
+  "id": "musique_train_4963",
+  "query": "which label",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_5483",
+  "query": "who was managing them the year they won it",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_5642",
+  "query": "the documentary about the making of it?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_6011",
+  "query": "他当时是做什么的",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_train_6395",
+  "query": "which metro area does that fall under",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_6571",
+  "query": "ok and how many households in that one, 2010",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_6730",
+  "query": "the school's district or county or whatever",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_7846",
+  "query": "who showed up more there back then",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_8328",
+  "query": "when did she die",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_8544",
+  "query": "whos in charge of that place",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_8571",
+  "query": "same city — who's the famous one born in 25",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_8841",
+  "query": "when did the brits finally pull out of there",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_10272",
+  "query": "which branch did he serve in",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_11810",
+  "query": "where does it rank",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_11972",
+  "query": "when was it annexed",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_12370",
+  "query": "when did things go sour between them",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_13832",
+  "query": "the torch thing — when",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_13992",
+  "query": "why'd they complain",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_14222",
+  "query": "what country is that town actually in",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_14438",
+  "query": "how many of them live there",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_14441",
+  "query": "那边那个族裔到底有多少人啊",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_train_14654",
+  "query": "new ceo of the label?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_14685",
+  "query": "what genre",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_15224",
+  "query": "and when does that session actually wrap up",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_15323",
+  "query": "who got elected president there in 2017",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_15558",
+  "query": "poverty line?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_15880",
+  "query": "where'd he end up dying",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_15985",
+  "query": "who started exploring that coastline",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_16412",
+  "query": "interfaith marriage rate over there?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_16457",
+  "query": "and when did they refuse to hand it over",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_16655",
+  "query": "what happened to those places after rome fell",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_16721",
+  "query": "他那个城市啥时候办过那个",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_train_17052",
+  "query": "when did it officially go christian",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_17256",
+  "query": "the capital of that county",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_17284",
+  "query": "so who ended up winning that one",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18231",
+  "query": "who was his mother",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18245",
+  "query": "ok and when was eritrea taken over by them",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18246",
+  "query": "same question but the other founding one",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18266",
+  "query": "and canada? when did that happen",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18287",
+  "query": "how far is wrigley from the water",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18289",
+  "query": "and the distance from there to it?",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18395",
+  "query": "他妈是谁来着",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_train_18408",
+  "query": "the mother — same as the last one?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18465",
+  "query": "who was running that country at the time",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18580",
+  "query": "how high up is it",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18591",
+  "query": "那时候是谁在那边多起来了",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_train_18698",
+  "query": "the land bridge — when'd it go under",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18794",
+  "query": "largest what exactly",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18857",
+  "query": "when did they first get there",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_18924",
+  "query": "how many regions do they officially count over there",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_19014",
+  "query": "where do the money bills have to start, and why",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_19097",
+  "query": "what year did that state swing back",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_19891",
+  "query": "plymouth's rank?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_19914",
+  "query": "when did italy join that one",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_267",
+  "query": "her kid's movement?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_394",
+  "query": "那会儿那边是什么体制",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_validation_1155",
+  "query": "who's that song even about",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1337",
+  "query": "who went second in 99",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1371",
+  "query": "when'd they take the house",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1389",
+  "query": "and for the other chamber? same thing",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1406",
+  "query": "the house question again but the rules one",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1887",
+  "query": "whats the longest one ever hit",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1905",
+  "query": "the county seat",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_1964",
+  "query": "谁的配偶想改那个教来着",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_validation_2026",
+  "query": "when was it created",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_2035",
+  "query": "the one just north of there — when was it set up",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_2049",
+  "query": "how many minority groups got treated differently in that city",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_2312",
+  "query": "who did he name as the arbitrator",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_2331",
+  "query": "which month",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_validation_2396",
+  "query": "那个公园是纪念谁的",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "zh"
+ }
+]

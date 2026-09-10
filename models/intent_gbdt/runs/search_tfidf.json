@@ -1,0 +1,54 @@
+{
+  "lightgbm": {
+    "cv_accuracy": 0.7766,
+    "params": {
+      "n_estimators": 603,
+      "learning_rate": 0.04421291893432149,
+      "num_leaves": 183,
+      "min_child_samples": 10,
+      "subsample": 0.8333833577228338,
+      "colsample_bytree": 0.7694465087327116,
+      "reg_lambda": 0.008032702926466745,
+      "reg_alpha": 0.0035852205200166674
+    },
+    "trials": 8,
+    "seconds": 617
+  },
+  "xgboost": {
+    "cv_accuracy": 0.79,
+    "params": {
+      "n_estimators": 541,
+      "learning_rate": 0.03445441737078129,
+      "max_depth": 8,
+      "min_child_weight": 0.28043792954433727,
+      "subsample": 0.9941869190296131,
+      "colsample_bytree": 0.37143136752361966,
+      "reg_lambda": 0.007913802239810518,
+      "reg_alpha": 0.0049407977325260895
+    },
+    "trials": 8,
+    "seconds": 2792
+  },
+  "catboost": {
+    "cv_accuracy": 0.7907,
+    "params": {
+      "iterations": 552,
+      "learning_rate": 0.04429649570464297,
+      "depth": 8,
+      "l2_leaf_reg": 26.512259742974308,
+      "random_strength": 0.03417952912061012
+    },
+    "trials": 5,
+    "seconds": 6758
+  },
+  "logreg": {
+    "cv_accuracy": 0.7432,
+    "params": {},
+    "trials": 1
+  },
+  "linear_svc": {
+    "cv_accuracy": 0.7368,
+    "params": {},
+    "trials": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "distilbert",
+  "version": "v1",
+  "base_model": "distilbert-base-uncased",
+  "threshold": 0.5,
+  "max_length": 512,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "dev_path": null,
+  "train_cases": 9000,
+  "dev_cases": 0,
+  "metrics": {}
+}

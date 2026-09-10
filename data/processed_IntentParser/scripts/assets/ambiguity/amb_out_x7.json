@@ -1,0 +1,248 @@
+[
+ {
+  "id": "casehold_train_17248",
+  "query": "wait so did he lose it just because he brought it up that late?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_17699",
+  "query": "was she allowed to just assume that with nothing backing it up",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_17941",
+  "query": "is stacking the extra charge on top of that ok or does it cross the line",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_18001",
+  "query": "does it still count if the person never actually stopped",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_18547",
+  "query": "toss it or move it?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_18985",
+  "query": "她根本没打开那个东西，这样也能算她知道吗",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_train_19063",
+  "query": "the deference thing when they get to read their own rules?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_23482",
+  "query": "did they jump the gun deciding it in that order",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_24904",
+  "query": "and the second part, where he never brought it up below?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_24916",
+  "query": "what standard tho",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_26190",
+  "query": "something about who got there first?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_26654",
+  "query": "does that cover the mental side too or only the physical stuff",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_31283",
+  "query": "are you supposed to read the whole thing together or just the one line",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_33170",
+  "query": "他都能当场问回去、当场反驳了，这样还不够吗",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_train_34962",
+  "query": "is just feeling like thats why it happened enough",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_35104",
+  "query": "did letting that in actually change the outcome or not",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_36803",
+  "query": "fair game once its out there?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_38929",
+  "query": "ok but going all in like that, bad call or just a gamble that didnt pay off",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_39509",
+  "query": "can he even complain about it if he wasnt there",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_43744",
+  "query": "whose job was it to go check",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_44019",
+  "query": "角落里小字都写清楚了，这样还算误导吗",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_validation_780",
+  "query": "federal one wins over the state one there?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_validation_2344",
+  "query": "was that really enough for them to go up to him",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_validation_2902",
+  "query": "can both of them charge him over the same thing",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_1601",
+  "query": "who took the top three last night",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_3950",
+  "query": "how many times in that one week?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_4097",
+  "query": "what year was that again",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_4137",
+  "query": "她说为什么之前的数字差那么多来着",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_test_4513",
+  "query": "whats actually causing all of it over there",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_5441",
+  "query": "what did she say when they asked her about it",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_6465",
+  "query": "last place she was seen?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_6911",
+  "query": "who broke it",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_7944",
+  "query": "when did it drop to the lowest its been in years",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_8328",
+  "query": "联名写那封信的那位是谁来着",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_test_8875",
+  "query": "wheredshe do that interview again",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_10420",
+  "query": "so whos looking after her now",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_11524",
+  "query": "who did he meet with on tuesday",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_13968",
+  "query": "who'd he beat",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_14167",
+  "query": "哪家让投资人失望了",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_test_14225",
+  "query": "the one who pulled out monday?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_14662",
+  "query": "and when did the third one turn up",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ }
+]

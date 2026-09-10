@@ -1,0 +1,12 @@
+{
+  "family": "tfidf",
+  "name": "tfidf_svm",
+  "version": "v1",
+  "vectorizer": "TfidfVectorizer",
+  "classifier": "svm",
+  "threshold": 0.5,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "train_cases": 9000,
+  "training_set_accuracy": 0.94,
+  "vocabulary": 200000
+}

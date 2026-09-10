@@ -1,0 +1,422 @@
+[
+ {
+  "id": "squad_train_839",
+  "query": "that professor who wrote the piece about it?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_2599",
+  "query": "tell me about the companies that did it",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_3384",
+  "query": "the cracks?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_4178",
+  "query": "ok and whats the percentage for them there",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_4713",
+  "query": "who did he end up talking to after all that",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_6613",
+  "query": "how do you actually get free from it",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_7136",
+  "query": "and out of those how many made it to the next round",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_7867",
+  "query": "average litter size",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_7903",
+  "query": "what are those three examples of exactly",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_7960",
+  "query": "what did they inherit from their ancestors",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_8272",
+  "query": "so how did it actually finish there if nobody carried it",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_8340",
+  "query": "same thing but for the other city",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_9539",
+  "query": "它们是怎么挪动的来着，好像有个专门说法",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "squad_train_9602",
+  "query": "who in 1970?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_11074",
+  "query": "biggest one out of those seven?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_13329",
+  "query": "平原占多少",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "squad_train_15203",
+  "query": "and the fourth one?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_17513",
+  "query": "what kind of guidelines get thrown off by it",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_17523",
+  "query": "whats the italian word for it, the one that means legal time",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_18786",
+  "query": "when was that word in the anthem",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_18788",
+  "query": "biggest minority?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_19338",
+  "query": "what does the ceremony actually accomplish in the end",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_19438",
+  "query": "why are they so careful about calling it that",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_19797",
+  "query": "how long did he give him to get there",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_19906",
+  "query": "who made it",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_19930",
+  "query": "queen of what again",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_20687",
+  "query": "他们在那边挖的是什么东西",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "squad_train_21028",
+  "query": "whats sitting on both ends",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_21628",
+  "query": "how many streets were in the plan",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_22977",
+  "query": "who were they close with",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_25600",
+  "query": "what other option does it give you even though barely anything supports it",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_26076",
+  "query": "invade where",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_27628",
+  "query": "whats it actually based on",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_29059",
+  "query": "那块地方是哪年划过去的",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "squad_train_29276",
+  "query": "whats that control unit thing",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_29898",
+  "query": "how many copies did that album move",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_29906",
+  "query": "and who sang for the other band",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_32501",
+  "query": "roughly how many get published",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_37413",
+  "query": "the royal guest count?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_37586",
+  "query": "who was her last uncle still alive",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_38614",
+  "query": "what were those military settlements called",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_39649",
+  "query": "which grad of that med school started the clinic",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_42431",
+  "query": "the two poets?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_45188",
+  "query": "and number three?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_45190",
+  "query": "when did that tour kick off",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_45665",
+  "query": "新的那条什么时候能通啊",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "squad_train_48404",
+  "query": "which one has nothing complete left describing it",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_49414",
+  "query": "what region is it most tied to",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_52726",
+  "query": "which two groups arent really told apart there",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_53046",
+  "query": "when did the third one lose power",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_53596",
+  "query": "how did the press describe them after all that",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_53805",
+  "query": "those two guys, what era",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_55277",
+  "query": "联赛是哪年成立的",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "squad_train_56154",
+  "query": "who was trying to calm everyone down about it",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_56260",
+  "query": "what did he say about that whole variety thing",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_57110",
+  "query": "the two roles?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_60390",
+  "query": "based where",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_61729",
+  "query": "when did she pass",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_63170",
+  "query": "what separates the cavities from each other",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_64567",
+  "query": "name a famous british player",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_65122",
+  "query": "他们俩对那个说法是什么态度",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "squad_train_65124",
+  "query": "what kind of bottleneck was that one",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_65125",
+  "query": "how much of it sits in just one group",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_66779",
+  "query": "who actually has the say over all that",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_68020",
+  "query": "the 6000 bc figures?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_68022",
+  "query": "最早那套东西可能是谁弄出来的",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "zh"
+ },
+ {
+  "id": "squad_train_69617",
+  "query": "who else besides him",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_70998",
+  "query": "who went to see him in 04",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_71199",
+  "query": "what'd they take first",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_71776",
+  "query": "was there ever one before that",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ }
+]

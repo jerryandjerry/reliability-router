@@ -1,0 +1,16 @@
+[
+  {
+    "id": "latency_slo",
+    "text": "The API p95 latency target is 200 milliseconds for the QUICK path.",
+    "source": "SLO document",
+    "trust": 0.95,
+    "metadata": {"owner": "platform"}
+  },
+  {
+    "id": "error_budget",
+    "text": "The monthly reliability error budget is 0.1 percent.",
+    "source": "Reliability policy",
+    "trust": 0.9,
+    "metadata": {"owner": "SRE"}
+  }
+]

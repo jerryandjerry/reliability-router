@@ -1,0 +1,67 @@
+{
+  "hgb": {
+    "cv_accuracy": 0.7317,
+    "params": {
+      "max_iter": 225,
+      "learning_rate": 0.023539659850149608,
+      "max_leaf_nodes": 34,
+      "min_samples_leaf": 82,
+      "l2_regularization": 9.452709767275815,
+      "max_features": 0.302149094496579
+    },
+    "trials": 60,
+    "seconds": 852
+  },
+  "lightgbm": {
+    "cv_accuracy": 0.7358,
+    "params": {
+      "n_estimators": 1496,
+      "learning_rate": 0.0152660765779951,
+      "num_leaves": 227,
+      "min_child_samples": 56,
+      "subsample": 0.5627491888672524,
+      "colsample_bytree": 0.823159877681404,
+      "reg_lambda": 15.685519323346497,
+      "reg_alpha": 19.67903789331508
+    },
+    "trials": 60,
+    "seconds": 1553
+  },
+  "xgboost": {
+    "cv_accuracy": 0.7364,
+    "params": {
+      "n_estimators": 1284,
+      "learning_rate": 0.014223556626879092,
+      "max_depth": 6,
+      "min_child_weight": 16.018690023815967,
+      "subsample": 0.5741578889345739,
+      "colsample_bytree": 0.5241233656360372,
+      "reg_lambda": 0.030767459244371843,
+      "reg_alpha": 12.634129841084576
+    },
+    "trials": 60,
+    "seconds": 2587
+  },
+  "catboost": {
+    "cv_accuracy": 0.7334,
+    "params": {
+      "iterations": 706,
+      "learning_rate": 0.010494518848247715,
+      "depth": 8,
+      "l2_leaf_reg": 7.94374051682333,
+      "random_strength": 0.16653128091231256
+    },
+    "trials": 20,
+    "seconds": 2141
+  },
+  "logreg": {
+    "cv_accuracy": 0.7241,
+    "params": {},
+    "trials": 1
+  },
+  "linear_svc": {
+    "cv_accuracy": 0.7297,
+    "params": {},
+    "trials": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "family": "tfidf",
+  "name": "tfidf_logreg",
+  "version": "v1",
+  "vectorizer": "TfidfVectorizer",
+  "classifier": "logreg",
+  "threshold": 0.5,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "train_cases": 9000,
+  "training_set_accuracy": 0.9254,
+  "vocabulary": 200000
+}

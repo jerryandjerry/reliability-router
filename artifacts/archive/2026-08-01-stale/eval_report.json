@@ -1,0 +1,670 @@
+{
+  "dataset": "data/routing_eval.jsonl",
+  "policy_version": "2026-06-rr-v1",
+  "total": 24,
+  "correct": 24,
+  "route_accuracy": 1.0,
+  "deep_precision": 1.0,
+  "deep_recall": 1.0,
+  "deep_f1": 1.0,
+  "confusion_matrix": {
+    "deep_as_deep": 16,
+    "quick_as_deep": 0,
+    "quick_as_quick": 8,
+    "deep_as_quick": 0
+  },
+  "p50_latency_ms": 0.0403,
+  "p95_latency_ms": 0.0576,
+  "reason_code_counts": {
+    "AMBIGUOUS_QUERY": 1,
+    "CITATIONS_REQUESTED": 2,
+    "CONTEXT_CONFLICT": 1,
+    "EVIDENCE_GAP": 11,
+    "FRESHNESS_REQUIRED": 3,
+    "HIGH_STAKES": 7,
+    "MULTI_STEP_REASONING": 3,
+    "NUMERICAL_REASONING": 3,
+    "POLICY_OVERRIDE": 16,
+    "PROMPT_INJECTION_RISK": 1,
+    "TOOL_GAP": 3,
+    "USER_PRESSURE": 2
+  },
+  "by_tag": {
+    "ambiguity": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "expected_deep": 1,
+      "caught_deep": 1,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "brainstorm": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "expected_deep": 0,
+      "caught_deep": 0,
+      "deep_recall": null,
+      "expected_quick": 1,
+      "false_deep": 0
+    },
+    "citations": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1.0,
+      "expected_deep": 2,
+      "caught_deep": 2,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "coding": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "expected_deep": 0,
+      "caught_deep": 0,
+      "deep_recall": null,
+      "expected_quick": 1,
+      "false_deep": 0
+    },
+    "conflict": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "expected_deep": 1,
+      "caught_deep": 1,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "context": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "expected_deep": 0,
+      "caught_deep": 0,
+      "deep_recall": null,
+      "expected_quick": 1,
+      "false_deep": 0
+    },
+    "creative": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "expected_deep": 0,
+      "caught_deep": 0,
+      "deep_recall": null,
+      "expected_quick": 1,
+      "false_deep": 0
+    },
+    "deep": {
+      "total": 16,
+      "correct": 16,
+      "accuracy": 1.0,
+      "expected_deep": 16,
+      "caught_deep": 16,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "financial": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "expected_deep": 3,
+      "caught_deep": 3,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "freshness": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "expected_deep": 3,
+      "caught_deep": 3,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "high-stakes": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "expected_deep": 3,
+      "caught_deep": 3,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "legal": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "expected_deep": 1,
+      "caught_deep": 1,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "medical": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1.0,
+      "expected_deep": 2,
+      "caught_deep": 2,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "multi-step": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "expected_deep": 3,
+      "caught_deep": 3,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "numerical": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1.0,
+      "expected_deep": 1,
+      "caught_deep": 1,
+      "deep_recall": 1.0,
+      "expected_quick": 1,
+      "false_deep": 0
+    },
+    "prompt-injection": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "expected_deep": 1,
+      "caught_deep": 1,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "quick": {
+      "total": 8,
+      "correct": 8,
+      "accuracy": 1.0,
+      "expected_deep": 0,
+      "caught_deep": 0,
+      "deep_recall": null,
+      "expected_quick": 8,
+      "false_deep": 0
+    },
+    "security": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "expected_deep": 1,
+      "caught_deep": 1,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "stable-fact": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "expected_deep": 0,
+      "caught_deep": 0,
+      "deep_recall": null,
+      "expected_quick": 1,
+      "false_deep": 0
+    },
+    "sycophancy": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1.0,
+      "expected_deep": 2,
+      "caught_deep": 2,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "tool": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "expected_deep": 1,
+      "caught_deep": 1,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    },
+    "translation": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "expected_deep": 0,
+      "caught_deep": 0,
+      "deep_recall": null,
+      "expected_quick": 1,
+      "false_deep": 0
+    },
+    "writing": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "expected_deep": 0,
+      "caught_deep": 0,
+      "deep_recall": null,
+      "expected_quick": 1,
+      "false_deep": 0
+    },
+    "zh": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "expected_deep": 3,
+      "caught_deep": 3,
+      "deep_recall": 1.0,
+      "expected_quick": 0,
+      "false_deep": 0
+    }
+  },
+  "predictions": [
+    {
+      "case_id": "quick_math",
+      "expected_route": "QUICK",
+      "predicted_route": "QUICK",
+      "correct": true,
+      "risk_score": 0.0888,
+      "reason_codes": [
+        "NUMERICAL_REASONING"
+      ],
+      "latency_ms": 0.1672,
+      "tags": [
+        "quick",
+        "numerical"
+      ]
+    },
+    {
+      "case_id": "quick_haiku",
+      "expected_route": "QUICK",
+      "predicted_route": "QUICK",
+      "correct": true,
+      "risk_score": 0.0,
+      "reason_codes": [],
+      "latency_ms": 0.041,
+      "tags": [
+        "quick",
+        "creative"
+      ]
+    },
+    {
+      "case_id": "quick_rewrite",
+      "expected_route": "QUICK",
+      "predicted_route": "QUICK",
+      "correct": true,
+      "risk_score": 0.0,
+      "reason_codes": [],
+      "latency_ms": 0.0546,
+      "tags": [
+        "quick",
+        "writing"
+      ]
+    },
+    {
+      "case_id": "quick_translate",
+      "expected_route": "QUICK",
+      "predicted_route": "QUICK",
+      "correct": true,
+      "risk_score": 0.0,
+      "reason_codes": [],
+      "latency_ms": 0.0311,
+      "tags": [
+        "quick",
+        "translation"
+      ]
+    },
+    {
+      "case_id": "quick_definition",
+      "expected_route": "QUICK",
+      "predicted_route": "QUICK",
+      "correct": true,
+      "risk_score": 0.0,
+      "reason_codes": [],
+      "latency_ms": 0.0313,
+      "tags": [
+        "quick",
+        "stable-fact"
+      ]
+    },
+    {
+      "case_id": "quick_code",
+      "expected_route": "QUICK",
+      "predicted_route": "QUICK",
+      "correct": true,
+      "risk_score": 0.0,
+      "reason_codes": [],
+      "latency_ms": 0.033,
+      "tags": [
+        "quick",
+        "coding"
+      ]
+    },
+    {
+      "case_id": "quick_brainstorm",
+      "expected_route": "QUICK",
+      "predicted_route": "QUICK",
+      "correct": true,
+      "risk_score": 0.0,
+      "reason_codes": [],
+      "latency_ms": 0.0315,
+      "tags": [
+        "quick",
+        "brainstorm"
+      ]
+    },
+    {
+      "case_id": "quick_summary",
+      "expected_route": "QUICK",
+      "predicted_route": "QUICK",
+      "correct": true,
+      "risk_score": 0.0003,
+      "reason_codes": [],
+      "latency_ms": 0.047,
+      "tags": [
+        "quick",
+        "context"
+      ]
+    },
+    {
+      "case_id": "deep_fresh_price",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.4776,
+      "reason_codes": [
+        "FRESHNESS_REQUIRED",
+        "TOOL_GAP",
+        "EVIDENCE_GAP",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0392,
+      "tags": [
+        "deep",
+        "freshness"
+      ]
+    },
+    {
+      "case_id": "deep_fresh_with_tool",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.3176,
+      "reason_codes": [
+        "FRESHNESS_REQUIRED",
+        "NUMERICAL_REASONING",
+        "EVIDENCE_GAP",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0405,
+      "tags": [
+        "deep",
+        "freshness",
+        "tool"
+      ]
+    },
+    {
+      "case_id": "deep_medical",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.384,
+      "reason_codes": [
+        "HIGH_STAKES",
+        "EVIDENCE_GAP",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0416,
+      "tags": [
+        "deep",
+        "high-stakes",
+        "medical"
+      ]
+    },
+    {
+      "case_id": "deep_legal",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.384,
+      "reason_codes": [
+        "HIGH_STAKES",
+        "EVIDENCE_GAP",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0435,
+      "tags": [
+        "deep",
+        "high-stakes",
+        "legal"
+      ]
+    },
+    {
+      "case_id": "deep_financial",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.384,
+      "reason_codes": [
+        "HIGH_STAKES",
+        "EVIDENCE_GAP",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0388,
+      "tags": [
+        "deep",
+        "high-stakes",
+        "financial"
+      ]
+    },
+    {
+      "case_id": "deep_citations",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.29,
+      "reason_codes": [
+        "CITATIONS_REQUESTED",
+        "TOOL_GAP",
+        "EVIDENCE_GAP",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0437,
+      "tags": [
+        "deep",
+        "citations"
+      ]
+    },
+    {
+      "case_id": "deep_architecture",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.11,
+      "reason_codes": [
+        "MULTI_STEP_REASONING",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0581,
+      "tags": [
+        "deep",
+        "multi-step"
+      ]
+    },
+    {
+      "case_id": "deep_ambiguous",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.095,
+      "reason_codes": [
+        "AMBIGUOUS_QUERY",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0235,
+      "tags": [
+        "deep",
+        "ambiguity"
+      ]
+    },
+    {
+      "case_id": "deep_sycophancy",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.5427,
+      "reason_codes": [
+        "HIGH_STAKES",
+        "USER_PRESSURE",
+        "EVIDENCE_GAP",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.04,
+      "tags": [
+        "deep",
+        "sycophancy",
+        "financial"
+      ]
+    },
+    {
+      "case_id": "deep_injection_context",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.1523,
+      "reason_codes": [
+        "PROMPT_INJECTION_RISK",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0321,
+      "tags": [
+        "deep",
+        "prompt-injection"
+      ]
+    },
+    {
+      "case_id": "deep_conflict",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.2303,
+      "reason_codes": [
+        "CONTEXT_CONFLICT",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0491,
+      "tags": [
+        "deep",
+        "conflict"
+      ]
+    },
+    {
+      "case_id": "deep_security",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.5968,
+      "reason_codes": [
+        "HIGH_STAKES",
+        "MULTI_STEP_REASONING",
+        "EVIDENCE_GAP",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0445,
+      "tags": [
+        "deep",
+        "security",
+        "multi-step"
+      ]
+    },
+    {
+      "case_id": "deep_chinese_latest",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.5496,
+      "reason_codes": [
+        "FRESHNESS_REQUIRED",
+        "CITATIONS_REQUESTED",
+        "TOOL_GAP",
+        "EVIDENCE_GAP",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0302,
+      "tags": [
+        "deep",
+        "freshness",
+        "citations",
+        "zh"
+      ]
+    },
+    {
+      "case_id": "deep_chinese_medical",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.384,
+      "reason_codes": [
+        "HIGH_STAKES",
+        "EVIDENCE_GAP",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.024,
+      "tags": [
+        "deep",
+        "medical",
+        "zh"
+      ]
+    },
+    {
+      "case_id": "deep_chinese_pressure",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.5427,
+      "reason_codes": [
+        "HIGH_STAKES",
+        "USER_PRESSURE",
+        "EVIDENCE_GAP",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0247,
+      "tags": [
+        "deep",
+        "sycophancy",
+        "financial",
+        "zh"
+      ]
+    },
+    {
+      "case_id": "deep_multi_question",
+      "expected_route": "DEEP",
+      "predicted_route": "DEEP",
+      "correct": true,
+      "risk_score": 0.1988,
+      "reason_codes": [
+        "MULTI_STEP_REASONING",
+        "NUMERICAL_REASONING",
+        "POLICY_OVERRIDE"
+      ],
+      "latency_ms": 0.0506,
+      "tags": [
+        "deep",
+        "multi-step",
+        "numerical"
+      ]
+    }
+  ]
+}

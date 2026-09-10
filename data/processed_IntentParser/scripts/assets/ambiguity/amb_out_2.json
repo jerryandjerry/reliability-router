@@ -1,0 +1,422 @@
+[
+ {
+  "id": "hotpot_qa_train_39179",
+  "query": "which country is that one in",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_39684",
+  "query": "the father in law thing",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_40179",
+  "query": "what state is the stadium in",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_41810",
+  "query": "same family?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_43474",
+  "query": "wait what was it based on again",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_45433",
+  "query": "where was the composer from",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_47564",
+  "query": "both plants?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_47950",
+  "query": "ok and who did he beat",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_48307",
+  "query": "这两个案子是同一级法院审的吗",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_48507",
+  "query": "those two are on which landmass",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_49179",
+  "query": "where is it",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_49674",
+  "query": "which of the two went by the shortened name",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_49927",
+  "query": "他俩是一个国家的吗",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_51303",
+  "query": "what city was that draft held in",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_53048",
+  "query": "whats the population there in 09",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_54162",
+  "query": "the airing days for that drama?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_54809",
+  "query": "were they from the same place",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_56781",
+  "query": "which war",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_59274",
+  "query": "so its legal everywhere there except where",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_61747",
+  "query": "那地方归哪个区管",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_62079",
+  "query": "what league does he play in",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_63108",
+  "query": "both american?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_64077",
+  "query": "what did he do before that",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_64988",
+  "query": "the subsidiary in the same city?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_67712",
+  "query": "who made them",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_67772",
+  "query": "how many people live in that town",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_68601",
+  "query": "who actually wrote that one",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_69038",
+  "query": "都开花吗",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_69074",
+  "query": "哪个是入药的那个",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_69280",
+  "query": "trees?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_69798",
+  "query": "the 93 one under that parent group",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_70164",
+  "query": "whats the cap percentage on that kind of lending",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_71275",
+  "query": "and the guy who came back?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_73814",
+  "query": "both genera?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_74493",
+  "query": "those two drinks, what kind",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_74734",
+  "query": "那两个判例讲的是同一条修正案吗",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_75007",
+  "query": "which of them has more people in it",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_77777",
+  "query": "who founded the company behind both of those",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_79844",
+  "query": "and her grandsons rank?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_79854",
+  "query": "asian natives?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_79895",
+  "query": "where can those animals live",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_80108",
+  "query": "birth year of the winner",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_80728",
+  "query": "when did those people live",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_81600",
+  "query": "what type are both of those",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_82818",
+  "query": "how many venues",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_85239",
+  "query": "who owns the course",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_89007",
+  "query": "hes a director of what now",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_89174",
+  "query": "which one was bigger",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_89267",
+  "query": "the wifes name in that play?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_89854",
+  "query": "what beat it that year",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_633",
+  "query": "the beer with the guy on the label",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_1295",
+  "query": "which region",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_2369",
+  "query": "which one has more",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_2609",
+  "query": "she did the windows for which store",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_3065",
+  "query": "and what was his dad voted back then",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_3267",
+  "query": "the city with that neighborhood?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_5729",
+  "query": "brits?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_6751",
+  "query": "which one needed more work done to it",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_validation_7055",
+  "query": "are they both american",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_292",
+  "query": "how many did they win under him",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_460",
+  "query": "what new powers did the agency get over housing",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_1346",
+  "query": "where was he born",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_2560",
+  "query": "label?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_3411",
+  "query": "where was he drafted",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_3496",
+  "query": "那个城市多少人",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "musique_train_3688",
+  "query": "when did it become a full state",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_4170",
+  "query": "whos running that place now",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_4421",
+  "query": "the label for that singer",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_4516",
+  "query": "how old are the private schools there",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "musique_train_4958",
+  "query": "唱片公司呢",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "zh"
+ }
+]

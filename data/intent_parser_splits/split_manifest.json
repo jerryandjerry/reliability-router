@@ -1,0 +1,26 @@
+{
+  "version": "v2",
+  "allocation": "proportional, 10% of every (route, type-signature) group",
+  "source": "data/routing_eval_golden.jsonl",
+  "heldout": "data/routing_eval_golden_1k.jsonl",
+  "train": "data/intent_parser_splits/train.jsonl",
+  "source_sha256": "30b23aa761e67f9a0b1312ba301ccad297f868660881fccb35e17c81f9b921a8",
+  "heldout_sha256": "86704474b4bf8474c722044951248eb169395e3774dbaa7ea5911db8b4399854",
+  "train_sha256": "066c1ce52d92bf98045417e0718cc6a3b78bf3148e23c654bf402c9881d9d11c",
+  "source_cases": 10000,
+  "heldout_cases": 1000,
+  "train_cases": 9000,
+  "dev_cases": 0,
+  "groups": 267,
+  "overlap": {
+    "train_heldout": 0
+  },
+  "train_route_counts": {
+    "QUICK": 3964,
+    "DEEP": 5036
+  },
+  "heldout_route_counts": {
+    "DEEP": 558,
+    "QUICK": 442
+  }
+}

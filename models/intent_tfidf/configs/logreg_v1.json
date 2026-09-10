@@ -1,0 +1,15 @@
+{
+  "name": "tfidf_logreg",
+  "version": "v1",
+  "classifier": "logreg",
+  "analyzer": "word",
+  "ngram_range": [1, 2],
+  "min_df": 2,
+  "max_features": 200000,
+  "C": 4.0,
+  "max_iter": 2000,
+  "threshold": 0.5,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "output_dir": "models/intent_tfidf/runs/logreg_v1",
+  "export_dir": "models/intent_tfidf/exported/logreg_v1"
+}

@@ -1,0 +1,23 @@
+{
+  "family": "tfidf",
+  "name": "tfidf_xgboost",
+  "version": "v1",
+  "library": "xgboost",
+  "threshold": 0.5,
+  "params": {
+    "n_estimators": 541,
+    "learning_rate": 0.03445441737078129,
+    "max_depth": 8,
+    "min_child_weight": 0.28043792954433727,
+    "subsample": 0.9941869190296131,
+    "colsample_bytree": 0.37143136752361966,
+    "reg_lambda": 0.007913802239810518,
+    "reg_alpha": 0.0049407977325260895
+  },
+  "search_cv_accuracy": 0.79,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "train_cases": 9000,
+  "vectorizer": "TfidfVectorizer",
+  "max_features": 50000,
+  "training_set_accuracy": 0.9564
+}

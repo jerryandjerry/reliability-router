@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Intent Parser Leaderboard</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f4;
+      --surface: #ffffff;
+      --ink: #111111;
+      --muted: #66645f;
+      --line: #d9d7ce;
+      --accent: #2368b8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #10100f;
+        --surface: #1b1b19;
+        --ink: #f7f7f4;
+        --muted: #aaa79d;
+        --line: #33322f;
+        --accent: #6aa6f8;
+      }
+    }
+    body {
+      margin: 0;
+      padding: 32px 20px 64px;
+      background: var(--bg);
+      color: var(--ink);
+      font: 15px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    .wrap { width: 100%; max-width: 100%; margin: 0 auto; }
+    h1 { font-size: 22px; margin: 0 0 4px; }
+    .sub, .note { color: var(--muted); font-size: 13px; }
+    .bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 22px 0 16px; }
+    button {
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--surface);
+      color: var(--ink);
+      cursor: pointer;
+      font: inherit;
+      font-size: 13px;
+      padding: 6px 12px;
+    }
+    button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); font-weight: 650; }
+    .scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+    table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+    th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+    th { color: var(--muted); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; }
+    tr:last-child td { border-bottom: 0; }
+    .num { text-align: right; }
+    .rank { width: 1%; color: var(--muted); }
+    .empty { padding: 32px; text-align: center; color: var(--muted); }
+    code { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Intent Parser Leaderboard</h1>
+    <div class="bar">
+      <span class="sub">Sort by</span>
+      <button type="button" data-key="accuracy" data-better="1" aria-pressed="true">Accuracy</button>
+      <button type="button" data-key="deep_f1" data-better="1" aria-pressed="false">DEEP F1</button>
+      <button type="button" data-key="p50_latency_ms" data-better="-1" aria-pressed="false">p50 latency</button>
+      <button type="button" data-key="p95_latency_ms" data-better="-1" aria-pressed="false">p95 latency</button>
+    </div>
+    <div class="scroll" id="table"></div>
+  </main>
+  <script type="application/json" id="leaderboard-data">
+[
+  {
+    "id": 1,
+    "name": "tfidf_logreg",
+    "version": "v1",
+    "run_at": "2026-08-04T00:19:51-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.753,
+    "deep_f1": 0.7694,
+    "deep_precision": 0.8031,
+    "deep_recall": 0.7384,
+    "p50_latency_ms": 0.551,
+    "p95_latency_ms": 1.3674
+  },
+  {
+    "id": 2,
+    "name": "regex",
+    "version": "1.0",
+    "run_at": "2026-08-04T00:20:18-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.53,
+    "deep_f1": 0.3508,
+    "deep_precision": 0.7651,
+    "deep_recall": 0.2276,
+    "p50_latency_ms": 0.1455,
+    "p95_latency_ms": 0.4725
+  },
+  {
+    "id": 3,
+    "name": "embedding_knn",
+    "version": "v1",
+    "run_at": "2026-08-04T00:38:15-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.699,
+    "deep_f1": 0.7251,
+    "deep_precision": 0.7393,
+    "deep_recall": 0.7115,
+    "p50_latency_ms": 8.2688,
+    "p95_latency_ms": 12.2121
+  },
+  {
+    "id": 4,
+    "name": "distilbert",
+    "version": "v1",
+    "run_at": "2026-08-04T01:22:28-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.869,
+    "deep_f1": 0.8793,
+    "deep_precision": 0.9051,
+    "deep_recall": 0.8548,
+    "p50_latency_ms": 41.2947,
+    "p95_latency_ms": 46.3578
+  },
+  {
+    "id": 5,
+    "name": "tfidf_svm",
+    "version": "v1",
+    "run_at": "2026-08-04T09:48:47-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.756,
+    "deep_f1": 0.7766,
+    "deep_precision": 0.794,
+    "deep_recall": 0.7599,
+    "p50_latency_ms": 1.0562,
+    "p95_latency_ms": 1.8964
+  },
+  {
+    "id": 6,
+    "name": "openai",
+    "version": "gpt-5.6-luna-medium",
+    "run_at": "2026-08-04T10:32:13-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.805,
+    "deep_f1": 0.839,
+    "deep_precision": 0.7779,
+    "deep_recall": 0.9104,
+    "p50_latency_ms": 7755.3221,
+    "p95_latency_ms": 11889.5232
+  },
+  {
+    "id": 7,
+    "name": "openai",
+    "version": "gpt-5.6-terra-medium",
+    "run_at": "2026-08-04T10:48:11-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.785,
+    "deep_f1": 0.8298,
+    "deep_precision": 0.7433,
+    "deep_recall": 0.9391,
+    "p50_latency_ms": 6442.1786,
+    "p95_latency_ms": 14160.7153
+  },
+  {
+    "id": 8,
+    "name": "openai",
+    "version": "gpt-5.6-sol-medium",
+    "run_at": "2026-08-04T11:08:38-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.812,
+    "deep_f1": 0.8459,
+    "deep_precision": 0.7795,
+    "deep_recall": 0.9247,
+    "p50_latency_ms": 9280.1857,
+    "p95_latency_ms": 14981.8708
+  },
+  {
+    "id": 9,
+    "name": "anthropic",
+    "version": "claude-sonnet-5-medium",
+    "run_at": "2026-08-04T20:39:23-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.774,
+    "deep_f1": 0.8135,
+    "deep_precision": 0.7538,
+    "deep_recall": 0.8835,
+    "p50_latency_ms": 9661.4935,
+    "p95_latency_ms": 15367.9035
+  },
+  {
+    "id": 10,
+    "name": "anthropic",
+    "version": "claude-opus-5-medium",
+    "run_at": "2026-08-04T20:56:31-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.72,
+    "deep_f1": 0.7965,
+    "deep_precision": 0.6699,
+    "deep_recall": 0.9821,
+    "p50_latency_ms": 9811.1359,
+    "p95_latency_ms": 14276.8293
+  },
+  {
+    "id": 11,
+    "name": "embedding_cls",
+    "version": "v1",
+    "run_at": "2026-08-05T00:22:43-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.732,
+    "deep_f1": 0.7495,
+    "deep_precision": 0.7832,
+    "deep_recall": 0.7186,
+    "p50_latency_ms": 9.3414,
+    "p95_latency_ms": 15.3211
+  },
+  {
+    "id": 12,
+    "name": "tfidf_lightgbm",
+    "version": "v1",
+    "run_at": "2026-08-05T13:29:13-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.799,
+    "deep_f1": 0.813,
+    "deep_precision": 0.8453,
+    "deep_recall": 0.7832,
+    "p50_latency_ms": 1.1735,
+    "p95_latency_ms": 2.2527
+  },
+  {
+    "id": 13,
+    "name": "tfidf_xgboost",
+    "version": "v1",
+    "run_at": "2026-08-05T13:29:17-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.805,
+    "deep_f1": 0.8169,
+    "deep_precision": 0.858,
+    "deep_recall": 0.7796,
+    "p50_latency_ms": 0.7537,
+    "p95_latency_ms": 2.0618
+  },
+  {
+    "id": 14,
+    "name": "tfidf_catboost",
+    "version": "v1",
+    "run_at": "2026-08-05T13:44:04-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.809,
+    "deep_f1": 0.8183,
+    "deep_precision": 0.8722,
+    "deep_recall": 0.7706,
+    "p50_latency_ms": 8.1931,
+    "p95_latency_ms": 9.3343
+  },
+  {
+    "id": 15,
+    "name": "embedding_hgb",
+    "version": "v1",
+    "run_at": "2026-08-05T13:46:51-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.732,
+    "deep_f1": 0.7457,
+    "deep_precision": 0.7923,
+    "deep_recall": 0.7043,
+    "p50_latency_ms": 16.4791,
+    "p95_latency_ms": 21.1447
+  },
+  {
+    "id": 16,
+    "name": "embedding_catboost",
+    "version": "v1",
+    "run_at": "2026-08-05T13:47:14-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.733,
+    "deep_f1": 0.7479,
+    "deep_precision": 0.7904,
+    "deep_recall": 0.7097,
+    "p50_latency_ms": 7.6876,
+    "p95_latency_ms": 11.7322
+  },
+  {
+    "id": 17,
+    "name": "embedding_lightgbm",
+    "version": "v1",
+    "run_at": "2026-08-05T13:50:17-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.729,
+    "deep_f1": 0.7465,
+    "deep_precision": 0.7808,
+    "deep_recall": 0.7151,
+    "p50_latency_ms": 7.6578,
+    "p95_latency_ms": 11.5699
+  },
+  {
+    "id": 18,
+    "name": "embedding_xgboost",
+    "version": "v1",
+    "run_at": "2026-08-05T13:50:32-05:00",
+    "dataset": "data/routing_eval_golden_1k.jsonl",
+    "cases": 1000,
+    "accuracy": 0.737,
+    "deep_f1": 0.7531,
+    "deep_precision": 0.7909,
+    "deep_recall": 0.7186,
+    "p50_latency_ms": 7.6835,
+    "p95_latency_ms": 11.5588
+  }
+]
+  </script>
+  <script>
+    const metrics = [
+      ["accuracy", "Accuracy", value => value.toFixed(4)],
+      ["deep_f1", "DEEP F1", value => value.toFixed(4)],
+      ["deep_precision", "DEEP precision", value => value.toFixed(4)],
+      ["deep_recall", "DEEP recall", value => value.toFixed(4)],
+      ["p50_latency_ms", "p50 latency", value => `${value.toFixed(3)} ms`],
+      ["p95_latency_ms", "p95 latency", value => `${value.toFixed(3)} ms`],
+    ];
+    let entries = [];
+    let sortKey = "accuracy";
+    let sortDirection = 1;
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function metricCell(entry, key, format) {
+      const value = Number(entry[key]);
+      if (!Number.isFinite(value)) return '<td class="num"></td>';
+      return `<td class="num">${format(value)}</td>`;
+    }
+
+    function render() {
+      const sorted = [...entries].sort((a, b) => {
+        const left = Number(a[sortKey]);
+        const right = Number(b[sortKey]);
+        if (!Number.isFinite(left)) return 1;
+        if (!Number.isFinite(right)) return -1;
+        return sortDirection > 0 ? right - left : left - right;
+      });
+      document.querySelectorAll("button[data-key]").forEach(button => {
+        button.setAttribute("aria-pressed", String(button.dataset.key === sortKey));
+      });
+      if (!sorted.length) {
+        document.getElementById("table").innerHTML = '<div class="empty">No runs recorded yet.</div>';
+        return;
+      }
+      const rows = sorted.map((entry, index) => {
+        const cells = metrics.map(([key, , format]) => metricCell(entry, key, format)).join("");
+        return `<tr><td class="rank">${index + 1}</td>` +
+          `<td>${escapeHtml(entry.name || "")}</td>` +
+          `<td>${escapeHtml(entry.version || "")}</td>` +
+          `${cells}</tr>`;
+      }).join("");
+      document.getElementById("table").innerHTML =
+        '<table><thead><tr><th></th><th>Parser</th><th>Version</th>' +
+        '<th class="num">Accuracy</th><th class="num">DEEP F1</th><th class="num">DEEP precision</th>' +
+        '<th class="num">DEEP recall</th><th class="num">p50 latency</th>' +
+        '<th class="num">p95 latency</th></tr></thead><tbody>' + rows + '</tbody></table>';
+    }
+
+    function embeddedEntries() {
+      const element = document.getElementById("leaderboard-data");
+      if (!element) return [];
+      try {
+        const data = JSON.parse(element.textContent || "[]");
+        return Array.isArray(data) ? data : [];
+      } catch {
+        return [];
+      }
+    }
+
+    function loadEmbedded() {
+      entries = embeddedEntries();
+      render();
+    }
+
+    document.querySelectorAll("button[data-key]").forEach(button => {
+      button.addEventListener("click", () => {
+        sortKey = button.dataset.key;
+        sortDirection = Number(button.dataset.better);
+        render();
+      });
+    });
+
+    if (window.location.protocol === "file:") {
+      loadEmbedded();
+    } else {
+      fetch("leaderboard.json", { cache: "no-store" })
+        .then(response => {
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          return response.json();
+        })
+        .then(data => {
+          entries = Array.isArray(data) ? data : [];
+          render();
+        })
+        .catch(loadEmbedded);
+    }
+  </script>
+</body>
+</html>

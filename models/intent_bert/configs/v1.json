@@ -1,0 +1,16 @@
+{
+  "name": "distilbert",
+  "version": "v1",
+  "base_model": "distilbert-base-uncased",
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "output_dir": "models/intent_bert/runs/v1",
+  "export_dir": "models/intent_bert/exported/v1",
+  "max_length": 512,
+  "learning_rate": 2e-05,
+  "epochs": 3,
+  "train_batch_size": 16,
+  "eval_batch_size": 32,
+  "weight_decay": 0.01,
+  "threshold": 0.5,
+  "seed": 20260803
+}

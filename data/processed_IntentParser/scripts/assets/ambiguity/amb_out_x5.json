@@ -1,0 +1,248 @@
+[
+ {
+  "id": "finqa_train_865",
+  "query": "so how much did it come out ahead by over the four years",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_922",
+  "query": "average for 2012?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_1136",
+  "query": "was the first one bigger than the second there",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_1215",
+  "query": "whats the percentage split for 2009",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_1233",
+  "query": "lowest value?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_1326",
+  "query": "at that price what would the rest run us",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_1347",
+  "query": "那个从08到09年涨跌了百分之多少?",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "finqa_train_1518",
+  "query": "the five year gap between the two?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_1581",
+  "query": "growth rate?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_1609",
+  "query": "what percent was still available at the end of 2010",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_1908",
+  "query": "how far apart were the two by the end of that five years",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_2190",
+  "query": "ok and the five year number for that one?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_2249",
+  "query": "both years together?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_2254",
+  "query": "how much did it drop by during that year",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_2283",
+  "query": "这五年下来跟大盘差了多少",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "finqa_train_2302",
+  "query": "total benefit?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_2335",
+  "query": "how did it stack up against the index in 07",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_2451",
+  "query": "and that vs what it pulls in each year?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_2679",
+  "query": "if i dropped 10 mil in back then how much would i have walked away with",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_2942",
+  "query": "how much did that shift between the two years",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_3279",
+  "query": "same jump as last time, what does that make it for 2009",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_3565",
+  "query": "那三年平均多少?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "zh"
+ },
+ {
+  "id": "finqa_train_3717",
+  "query": "three year total?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_3778",
+  "query": "how much bigger than the other two put together",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_3989",
+  "query": "roughly what fraction of it wasnt cash in 2017",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_4087",
+  "query": "that one as a percent of the whole pot in 2010",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_4141",
+  "query": "变了多少",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "finqa_train_4183",
+  "query": "the interest part of it?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_4358",
+  "query": "whats the jump from 02 to 03 on those",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_4533",
+  "query": "how much did the expenses climb in percent terms",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_4564",
+  "query": "and versus four years earlier?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_4604",
+  "query": "what would i have gotten back on that in a year",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_4790",
+  "query": "total votes on it?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_5012",
+  "query": "growth in 05",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_5254",
+  "query": "那家一共值多少钱",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "zh"
+ },
+ {
+  "id": "finqa_train_5355",
+  "query": "did the fair value go up or down and by how much",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_5771",
+  "query": "yearly amortization on that deal?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_5854",
+  "query": "average per year?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_5926",
+  "query": "2016年他们那边一共多少件在打",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "finqa_train_6168",
+  "query": "how much did that business move between 11 and 12",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_6193",
+  "query": "and as a share of the total that year?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ }
+]

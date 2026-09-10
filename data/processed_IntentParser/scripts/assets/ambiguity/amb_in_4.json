@@ -1,0 +1,207 @@
+[
+ {
+  "id": "drop_train_31746",
+  "query": "How many rushing attempts did Mathews have in the game?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_31752",
+  "query": "How many yards difference was Cam Newton's first touchdown pass compared to his second?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_35432",
+  "query": "How many touchdowns did the Chiefs score in the first half?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_36564",
+  "query": "How many years after the creation of the Parakeet Society did John III become Duke?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_38096",
+  "query": "how many yards did Balls penalty punt go?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_42638",
+  "query": "Where were people lured?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_44072",
+  "query": "How many percent of the population was not literate?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_45006",
+  "query": "How many fewer males for every 100 females were there?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_45060",
+  "query": "How many more Danish Troops were than than Sture's?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_48050",
+  "query": "Did the county have more males or females?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_48241",
+  "query": "How many yards did Gostkowskie get to extend a 10 point lead?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_51557",
+  "query": "Which group in percent from the county is larger: under the age of 18 or 65 years of age or older?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_53964",
+  "query": "Did more households fall under the category of marriage living together or non-families?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_56671",
+  "query": "How many yards was Jacobs touchdown?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_57535",
+  "query": "Who had the longest drive of the game?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_57866",
+  "query": "In which quarter was the only field goal?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_58349",
+  "query": "Which happened first Brees touchdown pass to Reggie Bush or Devery Henderson?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_58557",
+  "query": "how many yards did Favre pass?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_63381",
+  "query": "What new item was rolled out nationally in Hungary in 1927?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_63495",
+  "query": "How many incomplete passes did Cutler have in the first half?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_63500",
+  "query": "How many completions did Cutler have in the first half?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_64679",
+  "query": "Which team scored more points in the first half, Tampa Bay or 49ers?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_65597",
+  "query": "Who kicked the final field goal of the game?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_70469",
+  "query": "How many more consecutive wins were won by the Warriors than by the Chicago Bulls?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_70942",
+  "query": "How many more tons were sank by the best method compared to the worst?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_72552",
+  "query": "How many more, in percentage, of the population in Greensboro were Baptist rather than Methodist?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_72988",
+  "query": "How many more percent of people were between the ages of 45 to 64 than those under the age of 18?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_74829",
+  "query": "How many percent were not born in Australia or China?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_75666",
+  "query": "Which is the second largest ethnic group in Addis Ababa?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_75984",
+  "query": "How many percent of people were in the three biggest age groups combined?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_train_76230",
+  "query": "How many years passed between Feijenoord's first and second double?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_validation_4370",
+  "query": "What makes using Flash a problem on the internet?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_validation_5358",
+  "query": "How many wins did the Bears have after beating the Raiders?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_validation_5981",
+  "query": "How many more TD passes did Luck have than Manning in the first half?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_validation_6868",
+  "query": "How many more total field goal yards did Robbie Gould make than Ryan Longwell?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_validation_8995",
+  "query": "How many more white women and girls were there in 1727 compared to white men and boys?",
+  "source": "drop"
+ },
+ {
+  "id": "drop_validation_9024",
+  "query": "Who controlled Rome before the Gothic War?",
+  "source": "drop"
+ },
+ {
+  "id": "finqa_train_129",
+  "query": "how is the cash flow statement from financing activities affected by the sales of commons stock during the 4th quarter of 2013?",
+  "source": "finqa"
+ },
+ {
+  "id": "finqa_train_328",
+  "query": "if the weighted-average grant date fair value of nonvested shares increased in predictable amounts , what would the approximate value of the fair value on june 30 , 2010?",
+  "source": "finqa"
+ },
+ {
+  "id": "finqa_train_656",
+  "query": "what was the percent of the change in the company 2019s reserve for product warranties in , 2006",
+  "source": "finqa"
+ },
+ {
+  "id": "finqa_train_701",
+  "query": "what was the ratio f the cash received from the exercise of stock options in 2013 to 2012",
+  "source": "finqa"
+ }
+]

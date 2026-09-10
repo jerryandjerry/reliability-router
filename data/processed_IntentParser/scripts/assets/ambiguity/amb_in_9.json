@@ -1,0 +1,207 @@
+[
+ {
+  "id": "asqa_train_548",
+  "query": "Who was the apostle that was crucified upside down?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_684",
+  "query": "Who was regarded as the first free jazz musician?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_784",
+  "query": "Where did the saying with great power comes great responsibility come from?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_792",
+  "query": "Who played in the first hockey game ever?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_933",
+  "query": "When did the smoking ban came into the uk?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_935",
+  "query": "Who played guitar on goodbye yellow brick road?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_962",
+  "query": "Name of cat in secret life of pets?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_973",
+  "query": "Who wrote the patriotic song kadam kadam badayeja?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_1550",
+  "query": "April 1980 armed gunmen stormed the iranian embassy in princes gate?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_2278",
+  "query": "Who owned the farmhouse where the two commanders of the civil war met to end the war?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_2322",
+  "query": "Who is number 10 on england soccer team?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_2710",
+  "query": "Who played in the nfc championship game last year?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_2747",
+  "query": "What is the language in the dominican republic?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_2763",
+  "query": "How many articles are there in the indian constitution?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_3077",
+  "query": "Who played light in the death note movie?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_3117",
+  "query": "Who has the most shutouts in nhl history?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_3148",
+  "query": "What is the total number of goals scored in the 2018 world cup?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_3165",
+  "query": "When did stranger things come out on netflix?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_3231",
+  "query": "When was the first globe of the world made?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_3744",
+  "query": "What is the name of the satellite that orbits earth?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_3887",
+  "query": "When did sports authority go out of business?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_3948",
+  "query": "Where does congress draw its constitutional powers from?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_4023",
+  "query": "Who played tarzan in the legend of tarzan?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_4048",
+  "query": "When was last time england won world cup?",
+  "source": "asqa"
+ },
+ {
+  "id": "asqa_train_4249",
+  "query": "When did biltmore house open to the public?",
+  "source": "asqa"
+ },
+ {
+  "id": "retrievalqa_train_33",
+  "query": "Which labor union ended a historic strike this week?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_177",
+  "query": "What percentage of British teenagers feel \"addicted\" to social media, according to a new Cambridge University study?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_183",
+  "query": "Which classic video game was finally beaten this week nearly 40 years after its release?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_234",
+  "query": "What is Julia de Asensi's occupation?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_336",
+  "query": "In what city was Mikael Eriksson born?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_425",
+  "query": "In what country is Taia River?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_430",
+  "query": "Who was the producer of Today?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_489",
+  "query": "Who was the director of The Physician?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_499",
+  "query": "Who was the director of Sold?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_566",
+  "query": "Who was the screenwriter for The Worst Years of Our Lives?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_659",
+  "query": "What sport does David Homoláč play?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_707",
+  "query": "What sport does Marko Vidović play?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_966",
+  "query": "How many American companies were there in the Fortune Global 500 list last year?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_969",
+  "query": "In what country was the most recent Time Person of the Year born?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_1041",
+  "query": "Who was the General in charge of the American forces on D-Day?",
+  "source": "retrievalqa"
+ },
+ {
+  "id": "retrievalqa_train_1099",
+  "query": "Prior to Viginia Wade in 1977 who was the last British player to win a tennis Grand Slam title?",
+  "source": "retrievalqa"
+ }
+]

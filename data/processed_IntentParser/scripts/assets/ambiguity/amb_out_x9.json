@@ -1,0 +1,248 @@
+[
+ {
+  "id": "asqa_train_548",
+  "query": "the upside down one, who was that",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_684",
+  "query": "who started it",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_784",
+  "query": "where does that line actually come from",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_792",
+  "query": "ok so who played in the very first one",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_933",
+  "query": "when did the ban actually kick in",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_935",
+  "query": "guitar on that track?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_962",
+  "query": "那只猫叫啥来着",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "asqa_train_973",
+  "query": "who did that song",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_1550",
+  "query": "who were the ones that broke in that time",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_2278",
+  "query": "right but whose house was it",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_2322",
+  "query": "number 10?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_2710",
+  "query": "who was in the championship game last season",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_2747",
+  "query": "他们那边平时讲什么话啊",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "asqa_train_2763",
+  "query": "how many articles",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_3077",
+  "query": "who played the lead in the movie",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_3117",
+  "query": "most shutouts ever?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_3148",
+  "query": "how many goals were there in total",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_3165",
+  "query": "when did it drop",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_3231",
+  "query": "and the first one, when was that made",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_3744",
+  "query": "whats the big one going around us called",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_3887",
+  "query": "when did that place close down",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_3948",
+  "query": "这权力到底是哪儿来的",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "zh"
+ },
+ {
+  "id": "asqa_train_4023",
+  "query": "the guy in the newer one?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_4048",
+  "query": "那上一次是什么时候来着",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "asqa_train_4249",
+  "query": "when did the big house open to the public",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_33",
+  "query": "who settled",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_177",
+  "query": "what percent did the study say",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_183",
+  "query": "which one did they finally beat",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_234",
+  "query": "her job?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_336",
+  "query": "and where was he born",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_425",
+  "query": "那条河是哪个国家的",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "retrievalqa_train_430",
+  "query": "who produced today",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_489",
+  "query": "director on that one?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_499",
+  "query": "who directed it",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_566",
+  "query": "same q but for the writing credit",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_659",
+  "query": "what sport",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_707",
+  "query": "and him?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_966",
+  "query": "去年有多少家美国公司上榜",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "retrievalqa_train_969",
+  "query": "wheres the latest one from",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_1041",
+  "query": "the general in charge that day?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "retrievalqa_train_1099",
+  "query": "and before her, who was the last one",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ }
+]

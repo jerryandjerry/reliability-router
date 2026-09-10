@@ -1,0 +1,422 @@
+[
+ {
+  "id": "casehold_train_40280",
+  "query": "wait so does that mean he only gets another one if the notes are gone",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_44220",
+  "query": "what's the judge actually supposed to weigh there",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_44345",
+  "query": "did that let them deny it or not",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_validation_864",
+  "query": "not direct enough?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_validation_1475",
+  "query": "is not objecting enough to count as bad lawyering",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_validation_2270",
+  "query": "independent findings first, or no?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_validation_2810",
+  "query": "was the motion ok there",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_879",
+  "query": "who hosted it",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_1271",
+  "query": "他们那个研究是拿什么做的来着",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_test_3805",
+  "query": "how many books did he actually write",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_3807",
+  "query": "who's she",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_3875",
+  "query": "which group did he say would get wiped out in that interview",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_3942",
+  "query": "last goal in that match?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_4348",
+  "query": "her age?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_4787",
+  "query": "how many kids does she have again",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_5224",
+  "query": "which ones got blocked in april",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_5296",
+  "query": "the name of that page tho",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_5433",
+  "query": "how long did that go on for",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_6536",
+  "query": "and what time did it happen",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_6711",
+  "query": "is he actually on board with that stuff",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_7745",
+  "query": "他们那边现在到底在闹什么病",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_test_8048",
+  "query": "the great wartime president, who was that",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_8701",
+  "query": "the guy they brought in monday, what happened to him",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_9561",
+  "query": "biggest single day jump?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_10359",
+  "query": "names of the lawmakers",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_11181",
+  "query": "venue for the ceremony?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_12922",
+  "query": "what was it built for exactly",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_12992",
+  "query": "这个最早是什么时候被发现的",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_test_13135",
+  "query": "when did the strikes start",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_13644",
+  "query": "where did he start out",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_14243",
+  "query": "who took the airport",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_14690",
+  "query": "and where did that whole thing come from originally",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_14966",
+  "query": "who did he do it with",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_15499",
+  "query": "which qb",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_15671",
+  "query": "她穿那件衣服是什么时候的事来着",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_test_15869",
+  "query": "where'd they sell the building",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_15936",
+  "query": "where's he holding the ceremony this year",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_16239",
+  "query": "who was the ref in that one",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_16942",
+  "query": "when did they start testing everyone there",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_17226",
+  "query": "how'd he die",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_18132",
+  "query": "whats the rate right now",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_18181",
+  "query": "who banned them",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_18797",
+  "query": "the two launches, when",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_19834",
+  "query": "公司那事最后是谁捅出去的",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_test_20117",
+  "query": "what did he do after he left",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_21602",
+  "query": "what does that place stand for",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_21954",
+  "query": "why were they stopped",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_24632",
+  "query": "when did it hit land",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_24988",
+  "query": "the chief's name?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_25364",
+  "query": "what competition is that one in",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_25986",
+  "query": "上午那三个是谁拿的",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_test_27494",
+  "query": "who ended up being the hero in the final",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_27836",
+  "query": "where was it found",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_32206",
+  "query": "name of the beach?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_35050",
+  "query": "which one was he referring to",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_35169",
+  "query": "who was the guy tearing the plastic off",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_35461",
+  "query": "when's the book out",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_35870",
+  "query": "when did they drop",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_4812",
+  "query": "where'd they take him after",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_4857",
+  "query": "他们研究的是哪几种啊",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_validation_4979",
+  "query": "where'd she end up getting treated",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_5128",
+  "query": "where did she talk about it",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_7165",
+  "query": "the one meeting him over there?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_7182",
+  "query": "what did he say about it",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_8121",
+  "query": "when's it get signed off",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_8568",
+  "query": "who took over after the sacking",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_dev_4",
+  "query": "how many parks are there",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_dev_124",
+  "query": "现在那边负责人是谁",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "asqa_dev_176",
+  "query": "who gets fired in season 6",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_dev_197",
+  "query": "when was that law repealed",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ }
+]

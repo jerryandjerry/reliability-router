@@ -1,0 +1,207 @@
+[
+ {
+  "id": "hotpot_qa_train_50688",
+  "query": "What type of brand are Schweppes and Frescolita?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_52156",
+  "query": "Unit Ei 1644 was established in 1939 in Japanese-occupied Nanking as a satellite unit of Unit 731, a covert biological and chemical warfare research and development unit of what army?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_53913",
+  "query": "Arup Chattopadhyay was was awarded top grade by whom for performing with leading artists like Shahid Parvez?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_55940",
+  "query": "Marit Svarva Henriksen was a politician for a social-democratic plitical party in Norway that is currently led by who?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_62606",
+  "query": "Korg, the fictional comic book character appeared in \"The Incredible Hulk\" published by which comic publishers owned by Walt Disney Company?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_63115",
+  "query": "What country did rock bands Screaming Trees and Porno for Pyros originate in?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_64107",
+  "query": "The Devil Came on Horseback and The Life of Mammals are examples of what kind of film?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_65085",
+  "query": "Kevin Killen (born October 22, 1959) is a music producer, engineer, and mixer, he has worked with a range of recording artists including which English singer-songwriter, musician and record producer, born on 30 July 1958?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_65824",
+  "query": "on Wednesdays and Thursdays",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_68572",
+  "query": "What basketball star who played for the Orlando Magic and Phoenix Suns stared in Blue chips with Shaquille O'Neal?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_68797",
+  "query": "In between Ronald Firbank and Piers Anthony who is most famous for his set in the fictional realm of Xanth?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_68910",
+  "query": "How many men fought in the battle that the 1981 play, The Accrington Pals, is based on?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_69550",
+  "query": "What city was Tomas Swartwout born in that was previously known as Beverwijck?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_69761",
+  "query": "For the court cases Curtis Publishing Co. v. Butts and Katzenbach v. Morgan, which established First Amendment protections, and which allowed Congress law enactment?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_73442",
+  "query": "In what county is Podunk located?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_74023",
+  "query": "South of the Border and The Fog of War, have which mutual genre?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_74118",
+  "query": "Which dog breed, Russian Spaniel or Portuguese Podengo, has been around the longest?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_79180",
+  "query": "Joseph Hendrie, served as chairman of the Department of Applied Science at where?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_79198",
+  "query": "Who was born in Nagasaki, Japan and wrote the novel upon which The Remains of the Day, the musical, was based?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_79770",
+  "query": "Is Bumbo or a Brandy Alexander a drink that sometimes contains cinnamon?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_79845",
+  "query": "Which out of the Ward 8 and Hanky-Panky cocktail recipes was devised in Boston?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_80832",
+  "query": "Who was the director of the 1969 neo-noir film starring the actor who played Bret Maverick in the 1950s western comedy series \"Maverick\" ?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_82251",
+  "query": "Are Marti Pellow and Jack Evans from the same country?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_84547",
+  "query": "Which former anchor store of the Vallco Shopping Mall was founded in 1886?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_87890",
+  "query": "Who is a French filmmaker known for the Holocaust documentary film \"Shoah\", Claude Lanzmann or Shane Meadows?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_87973",
+  "query": "Are Piptanthus and Ajania in the same family?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_88279",
+  "query": "Jasione and Parthenocissus are both genus of what?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_88440",
+  "query": "Woman's Own and Femina, are which form of entertainment?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_train_89790",
+  "query": "Are both Warren County Canal and Dismal Swamp Canal located in the same state?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_validation_314",
+  "query": "How many days did it take the Best New Artist of 2009 to sell 2 million copies of an album in the UK and break a twenty year old record?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_validation_1268",
+  "query": "Are Sutera and Rhodotypos both types of shrub?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_validation_1579",
+  "query": "Which singer is younger, Kenny Greene or Billy Idol?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_validation_2284",
+  "query": "Sal de Mi Piel is a song by the actress who is of what nationality?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_validation_5718",
+  "query": "Who brewed the first espresso coffee in space, Patrick Baudry or Samantha Cristoforetti?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_validation_6869",
+  "query": "Which magazine was founded first Science News or High Times ?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "hotpot_qa_validation_7172",
+  "query": "The most principle species of plants which requires an ericaceous type of compost can have what effect on its surroundings because of the way it takes up cations?",
+  "source": "hotpot_qa"
+ },
+ {
+  "id": "musique_train_128",
+  "query": "When did person who supervised the design and implementation of the iPod user interface die?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_train_351",
+  "query": "What country holds the Embassy of Turkey, to the country that Serdar Denktas is from?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_train_1609",
+  "query": "When did the war begin in which Iraqi pilot Jameel Sayhood fought in?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_train_3220",
+  "query": "What is the population of District 3's encompassing city?",
+  "source": "musique"
+ },
+ {
+  "id": "musique_train_4649",
+  "query": "How many Grammy awards does the person who released Exhale (Shoop Shoop) have?",
+  "source": "musique"
+ }
+]

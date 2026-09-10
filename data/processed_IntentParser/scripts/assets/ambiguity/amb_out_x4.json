@@ -1,0 +1,248 @@
+[
+ {
+  "id": "drop_train_31746",
+  "query": "how many carries did he end up with",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_31752",
+  "query": "ok and whats the gap between the first one and the second",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_35432",
+  "query": "touchdowns before halftime?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_36564",
+  "query": "how many years after it got founded did he take over",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_38096",
+  "query": "how far did it go",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_42638",
+  "query": "他们最后被骗到哪去了",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_44072",
+  "query": "what percent of them couldnt read",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_45006",
+  "query": "whats the gap per hundred",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_45060",
+  "query": "and how many more did the other side bring",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_48050",
+  "query": "more men or women there?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_48241",
+  "query": "how long was the one that stretched it out",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_51557",
+  "query": "哪个比例高一点 小孩还是老人",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_53964",
+  "query": "and which of those two was more common",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_56671",
+  "query": "how many yards tho",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_57535",
+  "query": "longest one that game?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_57866",
+  "query": "which quarter did the only one happen in",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_58349",
+  "query": "which of those came first",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_58557",
+  "query": "passing yards?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_63381",
+  "query": "what was the new thing they rolled out everywhere that year",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_63495",
+  "query": "how many did he miss before the break",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_63500",
+  "query": "and the ones he actually completed",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_64679",
+  "query": "who was up at the half",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_65597",
+  "query": "the last kick of the game, who?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_70469",
+  "query": "他们那次连胜比对面多几场来着",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_70942",
+  "query": "how much more did the best way get compared to the worst one",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_72552",
+  "query": "whats the spread between those two there",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_72988",
+  "query": "how much bigger is the older group",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_74829",
+  "query": "what percent came from somewhere else",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_75666",
+  "query": "and the second biggest one there?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_75984",
+  "query": "what do the three biggest ones add up to",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_76230",
+  "query": "中间隔了几年",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_validation_4370",
+  "query": "whats the issue with that thing again, everyone keeps complaining about it",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "drop_validation_5358",
+  "query": "so what were they at after that win",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_validation_5981",
+  "query": "how many more",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_validation_6868",
+  "query": "difference in total yardage between the two of them?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_validation_8995",
+  "query": "how many more females were there back then",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_validation_9024",
+  "query": "在那之前是谁说了算",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "finqa_train_129",
+  "query": "how does that end up showing on the financing side",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_328",
+  "query": "if it kept climbing at a steady pace what would it be by then",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_656",
+  "query": "percent change that year?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_train_701",
+  "query": "这两年的比值是多少来着",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "zh"
+ }
+]

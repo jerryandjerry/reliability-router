@@ -1,0 +1,12 @@
+{
+  "name": "embedding_knn",
+  "version": "v1",
+  "variant": "knn",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "k": 7,
+  "batch_size": 64,
+  "threshold": 0.5,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "output_dir": "models/intent_embedding/runs/knn_v1",
+  "export_dir": "models/intent_embedding/exported/knn_v1"
+}

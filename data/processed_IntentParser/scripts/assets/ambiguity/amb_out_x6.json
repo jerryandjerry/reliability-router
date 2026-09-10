@@ -1,0 +1,248 @@
+[
+ {
+  "id": "finqa_validation_15",
+  "query": "how much of the total does that one make up",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_validation_21",
+  "query": "ratio between those two years?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_validation_58",
+  "query": "那跟前面那年比呢",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "finqa_validation_85",
+  "query": "what was the percentage change between those two years",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_validation_221",
+  "query": "hey quick one - how much went into it overall, minus that one year?",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_validation_307",
+  "query": "what percent of the total",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_validation_318",
+  "query": "im looking at the two lines and cant tell which one they actually put more into that year",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_validation_585",
+  "query": "the balance change over those years?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_validation_853",
+  "query": "whats the percentage on that one line item",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "finqa_validation_869",
+  "query": "利润率多少",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_test_509",
+  "query": "so is that actually required or not",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_test_635",
+  "query": "the immunity thing?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_test_1326",
+  "query": "ok but what about third parties",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_test_2573",
+  "query": "这种算不算",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_test_2593",
+  "query": "was just being there enough",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_588",
+  "query": "wait so what if it wasnt him who said it, does that still count",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_798",
+  "query": "who wins",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_2030",
+  "query": "does it have to be someone from inside",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_2330",
+  "query": "how voluntary does it have to be",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_2773",
+  "query": "can they use that document",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_4408",
+  "query": "until when though",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_5007",
+  "query": "这个也要走仲裁吗",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_train_5740",
+  "query": "im confused, can the judge factor in other stuff that happened along the way or only the one thing",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_6855",
+  "query": "and the name part?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_7365",
+  "query": "does it matter where it happened",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_8096",
+  "query": "was that let in or not",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_8623",
+  "query": "mail enough?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_9472",
+  "query": "whats the standard here",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_10214",
+  "query": "the filing after judgment?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_10541",
+  "query": "那种情况下还能提吗",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_train_10559",
+  "query": "and if they never actually enforced it?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_10566",
+  "query": "does that only cover what he actually meant to happen",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_11171",
+  "query": "the custody one?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_11323",
+  "query": "so does that wipe it out completely or just stop them coming after him",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_12164",
+  "query": "and the witness issue?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_12723",
+  "query": "remand?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_12995",
+  "query": "so was he allowed to just remove the guy or not",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_13298",
+  "query": "这样能告吗",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "casehold_train_14180",
+  "query": "the board decision thing?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_15344",
+  "query": "is that covered by the exception or does it fall outside",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "casehold_train_15914",
+  "query": "the evidence one?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ }
+]

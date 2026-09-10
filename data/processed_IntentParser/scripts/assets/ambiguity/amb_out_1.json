@@ -1,0 +1,422 @@
+[
+ {
+  "id": "squad_train_74199",
+  "query": "who came up with it originally",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_74595",
+  "query": "the two main kinds?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_76008",
+  "query": "when did the school finally change that policy",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_77082",
+  "query": "whats it short for",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_78432",
+  "query": "which river",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_79111",
+  "query": "who runs it these days",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_82713",
+  "query": "when did that start mattering again",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_83661",
+  "query": "what school of thought is that",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "squad_train_85329",
+  "query": "instruments?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_163",
+  "query": "and the one before that, where was it held",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_269",
+  "query": "who was running the defense back then",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_1065",
+  "query": "where does the name come from originally",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_2119",
+  "query": "what actually makes the pay go up",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_2171",
+  "query": "他当时对学法律这事是什么看法来着",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "squad_validation_2199",
+  "query": "whats that doctrine actually saying",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_2780",
+  "query": "which part of the state though",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_2806",
+  "query": "what year did they buy them out",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_4185",
+  "query": "which court said that was fine",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_4189",
+  "query": "what's it all resting on really",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_4273",
+  "query": "which directive",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_4279",
+  "query": "and the articles?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_4303",
+  "query": "how much money do you need to start one over there",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_4304",
+  "query": "so what would actually justify limiting that",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_7331",
+  "query": "how much do they actually own",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_7339",
+  "query": "那到那年他们大概能占多少",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "squad_validation_9923",
+  "query": "what happened in 1767",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "squad_validation_10163",
+  "query": "which membership type though",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_413",
+  "query": "what sport did those two play",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_1390",
+  "query": "that comedy with the two guys stuck travelling, what year was it",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_1794",
+  "query": "who painted those",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_3736",
+  "query": "the host's birthday?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_5478",
+  "query": "similar how",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_5818",
+  "query": "whats those",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_6621",
+  "query": "which games were those again",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_7012",
+  "query": "这两个是一类的吗",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_7451",
+  "query": "same continent?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_8272",
+  "query": "both plants?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_9656",
+  "query": "the reporter woman who went missing, who was she",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_9929",
+  "query": "population there in 2010?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_12308",
+  "query": "which has more",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_13074",
+  "query": "哪个的种类更多一些",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_13463",
+  "query": "those two places?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_13818",
+  "query": "the gate thing out front?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_14053",
+  "query": "why is it so hard",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_14526",
+  "query": "which came first",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_15116",
+  "query": "它俩是一个国家的吗",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_15274",
+  "query": "who wrote the original script it was based on",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_19104",
+  "query": "where's it based",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_19220",
+  "query": "what genre are those bands anyway",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_21353",
+  "query": "and what was she to it exactly",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_22006",
+  "query": "what do they have in common",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_22250",
+  "query": "whats the connection between the two",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_22340",
+  "query": "and who put it out over here?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_23683",
+  "query": "the name comes from what greek word",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_25349",
+  "query": "那个中后卫叫什么来着，就打皇马的那个",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_26315",
+  "query": "when was the director born",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_27791",
+  "query": "those two are both what exactly",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_29353",
+  "query": "so what did the one make that the other never did",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_29519",
+  "query": "where's his home ground",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_29856",
+  "query": "what state is that place in",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_31159",
+  "query": "when was the writer born",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_31586",
+  "query": "which of them is the one on tv",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_32100",
+  "query": "这俩都是植物吧",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_32657",
+  "query": "which of the neighbouring estates",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_33370",
+  "query": "who's older",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_35070",
+  "query": "theyre both american what",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_36631",
+  "query": "are they both documentary people or no",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_36663",
+  "query": "那首歌是哪家公司发的来着",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "hotpot_qa_train_37054",
+  "query": "commonality?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "hotpot_qa_train_37289",
+  "query": "how long did that last afterwards",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ }
+]

@@ -1,0 +1,207 @@
+[
+ {
+  "id": "casehold_train_17248",
+  "query": "Does the court hold that on remand from the supreme court that appellant had forfeited a stem claim when he did not raise it until his reply brief in the district court appeal of the bankruptcy order he was challenging?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_17699",
+  "query": "Does the court hold that the ij impermissibly relied upon personal beliefs and conjecture when the ij expressed her disbelief that the german government would have allowed the petitioner to attend college with no evidence supporting the ijs belief?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_17941",
+  "query": "Does the court hold that accruing interest at the default interest rate was not a penalty but the addition of a 5 late charge on top of the default interest would have been unreasonable pursuant to 506b and would have therefore been a penalty?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_18001",
+  "query": "Does the court hold that a show of authority by a government actor does not constitute a seizure unless the subject yields or submits to it?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_18547",
+  "query": "Does the court hold that when a forum selection clause designates an arbitral forum the proper remedy is dismissal?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_18985",
+  "query": "Does the court hold that evidence sufficient to establish that defendant had knowledge of contraband in parcel even though the parcel was never opened because she inter alia signed a false name for a package that contained a kilogram of cocaine and gave officers false information about the person she claimed was the intended recipient?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_19063",
+  "query": "Does the court hold that plan fiduciary is entitled to deferential review if empowered by the plan to construe its terms in order to determine benefit eligibility?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_23482",
+  "query": "Does the court hold that the district court did not err in dismissing the named plaintiffs claims on summary judgment before reaching the issue of class certification?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_24904",
+  "query": "Does the court hold that district court correctly applied state law procedural bar to petitioners jury challenge despite state courts failure to indicate that its denial of petition rested on procedural grounds where petitioner never raised facially sufficient jury challenge before any state court and state courts denial of petition could not be construed as a decision on the merits?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_24916",
+  "query": "Does the court hold that factual conclusions of sentencing court which must be supported by a preponderance of the evidence are reviewed for clear error?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_26190",
+  "query": "Does the court hold that 522f1 requires a debtor to have possessed an interest to which a lien attached before it attached to avoid the fixing of the lien on that interest?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_26654",
+  "query": "Does the court hold that recognizing that the eggshell skull doctrine is traditionally applied to a plaintiffs preexisting physical condition mental illness or psychological disability internal citations omitted?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_31283",
+  "query": "Does the court hold that court must construe statute as whole giving meaning to all parts so that no part is superfluous?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_33170",
+  "query": "Does the court hold that due process requirements were satisfied where the plaintiff had opportunity to hear and crossexamine all adverse witnesses and to attempt to rebut their claims of insubordination and mishandling of funds?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_34962",
+  "query": "Does the court hold that former employees subjective belief that he suffered an adverse employment action as a result of discrimination without more is not enough to survive former employers summary judgment motion?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_35104",
+  "query": "Does the court hold that the district court committed plain error by admitting evidence obtained in violation of the fourth amendment where the error did affect a substantial right of the defendants and the admission of evidence which should have been excluded did have a prejudicial impact on the jury?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_36803",
+  "query": "Does the court hold that warrantless searches of garbage bags left on curb for collection invalid under state constitution?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_38929",
+  "query": "Does the court hold that the decision to pursue an all or nothing strategy was not patently unreasonable and accordingly that counsel was not ineffective in his strategic decision not to request a jury charge as to the lesserincluded offense?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_39509",
+  "query": "Does the court hold that vehicle owner not present in the vehicle when it was stopped had not suffered interference with his possessory interest and could not challenge the constitutionality of the stop?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_43744",
+  "query": "Does the court hold that recognizing in context of fraudulent nondisclosure cases that a defendant may reasonably expect the plaintiff to make his own investigation draw his own conclusions and protect himself?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_44019",
+  "query": "Does the court hold that a cigarette advertisement of tar content was deceptive despite a truthful fineprint explanation in corner of advertisement of how tar was measured?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_validation_780",
+  "query": "Does the court hold that a federal law permitting national banks to sell insurance in towns with less than 5000 residents preempted a state statute prohibiting banks from selling most types of insurance?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_validation_2344",
+  "query": "Does the court hold that investigative stop based on officers observation of defendant apparently asleep in legally parked car was improper?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_validation_2902",
+  "query": "Does the court hold that a tribe had the inherent authority to prosecute a nonmember indian for assaulting a tribal member while on the reservation and that federal assault charges stemming from the same incident and filed after the nonmembers tribal assault conviction were based on a separate power source and therefore did not violate the double jeopardy clause?",
+  "source": "casehold"
+ },
+ {
+  "id": "streamingqa_test_1601",
+  "query": "Which members of the Belfast Star basketball team won the top three awards in the men's game at Basketball Ireland Annual Awards yesterday?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_3950",
+  "query": "How many flood had Croston had in a week back in Dec 2015?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_4097",
+  "query": "In which year was the U.S.-led invasion of Iraq?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_4137",
+  "query": "What did NCAR scientist Christine Wiedinmyer cite as the reason air pollution across the globe was significantly underestimated in 2014?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_4513",
+  "query": "What world event is causing European economies to fall into recession ?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_5441",
+  "query": "what was the response of student teacher Angharad David at Ysgol Gyfun y Strade in Llanelli, Carmarthenshire?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_6465",
+  "query": "Where was Paula Lopez's last known location before she was reported missing in October 2020?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_6911",
+  "query": "Who broke the pole vault world record?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_7944",
+  "query": "When did Manufacturing activity in the US fall to a 9 year low?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_8328",
+  "query": "Who was the Scottish leader, who in October 2020, issued a joint letter to the UK governments urging them not to act in isolation when issuing guidance on the festive period?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_8875",
+  "query": "Where did Elise appear in an interview?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_10420",
+  "query": "Which charity is looking after Maria?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_11524",
+  "query": "Which social media company chief operating officer met Boris Johnson on Tuesday?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_13968",
+  "query": "Which player was beaten by Berdych?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_14167",
+  "query": "Which ride-sharing service disappointed investors?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_14225",
+  "query": "Which U.S. Senator dropped out of the presidential race Monday?",
+  "source": "streamingqa"
+ },
+ {
+  "id": "streamingqa_test_14662",
+  "query": "When was the third photo of Omar Abdullah, in detention since August 5, surfaced on social media?",
+  "source": "streamingqa"
+ }
+]

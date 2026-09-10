@@ -1,0 +1,422 @@
+[
+ {
+  "id": "pubmedqa_train_975",
+  "query": "if you do it over and over does it eventually wear the organ out",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "pubmedqa_train_976",
+  "query": "is the difference between the two sides a decent predictor of how bad it is",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_605",
+  "query": "who won it monday night?",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_2932",
+  "query": "first and last one combined?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_4366",
+  "query": "what was the lead early on",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_4369",
+  "query": "how many wins so far",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_6221",
+  "query": "and how long between the two deliveries",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_6284",
+  "query": "the two turnovers?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_7120",
+  "query": "how many did he get in the first",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_7553",
+  "query": "那中场的时候差多少",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_9963",
+  "query": "who had two",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_10710",
+  "query": "from who?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_11062",
+  "query": "what percent was everyone else",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_11722",
+  "query": "who caught the long one",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_12420",
+  "query": "how many losses did that put them at",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_12440",
+  "query": "成年的那部分哪边多一点",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_12551",
+  "query": "how many in a row before that one",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_13044",
+  "query": "percentage without kids?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_14876",
+  "query": "how many misses",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_16392",
+  "query": "which ones were over 15 percent",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_17635",
+  "query": "second half?",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_20695",
+  "query": "what was the spread on this one",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_20741",
+  "query": "who ran them in",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_23972",
+  "query": "他那几脚各是多少码来着",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_24036",
+  "query": "combined at the half?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_26079",
+  "query": "what percent didnt have anyone that old at home",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_26901",
+  "query": "how many points did they end up putting on the board",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_26960",
+  "query": "how many of those were the long ones",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_27932",
+  "query": "who hit the 50",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_28343",
+  "query": "and how much did they add over that stretch",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_31726",
+  "query": "第三节他们拿了几个",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_31750",
+  "query": "how many did they have by the half",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_31751",
+  "query": "which side scored more",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_34402",
+  "query": "how many years between the two things",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_36066",
+  "query": "difference in the first half?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_37114",
+  "query": "how many touchdowns",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_38097",
+  "query": "any of them 80 plus?",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_38387",
+  "query": "ok and which of those two is smaller",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_42630",
+  "query": "which came first",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_44845",
+  "query": "who came in for him",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_45294",
+  "query": "那场仗是跟哪两家打的",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_45884",
+  "query": "won by how much",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_46846",
+  "query": "how much did it drop by",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_48707",
+  "query": "who did both of those",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_49148",
+  "query": "the gap between those two age groups",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_53066",
+  "query": "how much longer was the second one than the first",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_55105",
+  "query": "total for him?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_56781",
+  "query": "yards for them?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_57398",
+  "query": "他多几个",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_58562",
+  "query": "how many were they facing",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_58564",
+  "query": "how many plays",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_58566",
+  "query": "how far did he go",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_58947",
+  "query": "all of them added up?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_58962",
+  "query": "what did he score",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_58969",
+  "query": "how far apart were those two throws",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_59465",
+  "query": "and the difference between those two?",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_59847",
+  "query": "which of them threw for more",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_63890",
+  "query": "has anyone ever come back from that",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_63912",
+  "query": "how long after the first one did the other die",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_63965",
+  "query": "which ones were the biggest share",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_64774",
+  "query": "whod they beat that week",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_66220",
+  "query": "这两件事中间隔了几个月",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_70398",
+  "query": "longest drive?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_71228",
+  "query": "who was second",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_72864",
+  "query": "how much bigger is that one than the bottom two put together",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_73583",
+  "query": "which of them had it first",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_73995",
+  "query": "how many years",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_75776",
+  "query": "how long till he was back",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "drop_train_76743",
+  "query": "哪一类更多",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "drop_train_76747",
+  "query": "how much more in percent terms",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ }
+]

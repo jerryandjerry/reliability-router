@@ -1,0 +1,207 @@
+[
+ {
+  "id": "finqa_validation_15",
+  "query": "what percentage of total aggregate contractual obligations is due to purchase obligationst?",
+  "source": "finqa"
+ },
+ {
+  "id": "finqa_validation_21",
+  "query": "what was the ratio of the pension trust assets for 2017 to 2018",
+  "source": "finqa"
+ },
+ {
+  "id": "finqa_validation_58",
+  "query": "at december 31 , 2006 what was the ratio of the expected future pension benefits after 2012 compared to 2008",
+  "source": "finqa"
+ },
+ {
+  "id": "finqa_validation_85",
+  "query": "what was the percentage change in the unrecognized tax benefits from 2015 to 2016?",
+  "source": "finqa"
+ },
+ {
+  "id": "finqa_validation_221",
+  "query": "what were capital expenditures associated with the retail segment since its inception , exclusive of the amount incurred during 2003 , in millions?",
+  "source": "finqa"
+ },
+ {
+  "id": "finqa_validation_307",
+  "query": "as of december 31 , 2016 what was the percent of the total commercial lending of the total commitments to extend credit and other commitments",
+  "source": "finqa"
+ },
+ {
+  "id": "finqa_validation_318",
+  "query": "does the company spend more on advertising in 2012 than on research and development?",
+  "source": "finqa"
+ },
+ {
+  "id": "finqa_validation_585",
+  "query": "what is the change in the balance of liability for restructuring 2003 program from 2006 to 2008 , ( in millions ) ?",
+  "source": "finqa"
+ },
+ {
+  "id": "finqa_validation_853",
+  "query": "what was the percent of the benefit related to the effective settlement of tax audits recorded as part of the company recorded an income tax provision for 2007",
+  "source": "finqa"
+ },
+ {
+  "id": "finqa_validation_869",
+  "query": "in 2005 what was industrial packaging the profit margin",
+  "source": "finqa"
+ },
+ {
+  "id": "casehold_test_509",
+  "query": "Does the court hold that some special relationship between the parties is required to recover under the theory of negligent misrepresentation?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_test_635",
+  "query": "Does the court hold that glc 152 15 provides that the only party immune from suit under the statute is the direct employer a special employer is not immune because the special employer is not liable for the payment of workers compensation and there was no agreement between the direct employer and the special employer that the special employer would be liable for the payment of such compensation?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_test_1326",
+  "query": "Does the court hold that a professional owes no duty to third persons unless the professional had actual knowledge that those persons would rely on his rendering of professional services?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_test_2573",
+  "query": "Does the court hold that allegations that employees supervisors yelled at her told her she was a poor manager and gave her poor evaluations chastised her in front of customers and once required her to work with an injured back were insufficient to state title vii claim?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_test_2593",
+  "query": "Does the court hold that inadmissible statements of juvenile made where parent who was incarcerated for drunkenness was brought to juveniles interrogation although interested adult must be present mere physical presence of parent is insufficient?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_588",
+  "query": "Does the court hold that retaliatory discharge based solely on protected speech by ones spouse is actionable under the first amendment?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_798",
+  "query": "Does the court hold that seller was entitled to recover contract price of goods where buyer failed to make effective rejection under the ucc?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_2030",
+  "query": "Does the court hold that the official charged with responsibility to act must be an official within the doj with the authority to act in the circumstances?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_2330",
+  "query": "Does the court hold that recognizing that custody while not determinative in itself places a heavy burden in showing consent was voluntarily given and noting that custody when coupled with other coercive factors will normally necessitate the conclusion that the consent is not effective?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_2773",
+  "query": "Does the court hold that a court may consider a document submitted by a defendant in determining whether to dismiss the complaint because it was integral to and explicitly relied on in the complaint and because the plaintiffs do not challenge its authenticity?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_4408",
+  "query": "Does the court hold that a plaintiff had an employment interest until the date his appointment terminated?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_5007",
+  "query": "Does the court hold that claims based on title vii subject to arbitration?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_5740",
+  "query": "Does the court hold that in exercising its discretion in choosing the appropriate sanction the trial court is not limited to considering only the specific violation committed but is entitled to consider other matters which have occurred during the litigation?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_6855",
+  "query": "Does the court hold that the trial court did not abuse its discretion in changing the surname of the child where the court made factual findings that the name change would be in the best interest of the child?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_7365",
+  "query": "Does the court hold that suit arose from alleged fraudulent transfer of real property located in texas even though the allegedly fraudulent assignment occurred in california?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_8096",
+  "query": "Does the court hold that the admission of a report was not hearsay because it was not offered to prove its truth but to impeach the veracity of the witnesss direct testimony?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_8623",
+  "query": "Does the court hold that the rule 4 requirement of delivery to the appropriate united states attorney required personal service not service by certified mail?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_9472",
+  "query": "Does the court hold that the supreme courts proper scope of review of a trial courts decision in a trial de novo of an assessment matter is whether the decision of the trial court was clearly erroneous?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_10214",
+  "query": "Does the court hold that a nonpartys motion for new trial and petition for intervention filed after the trial court signed a final judgment did not extend the courts plenary jurisdiction?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_10541",
+  "query": "Does the court hold that a child born to an intact marriage cannot be the subject of a paternity proceeding brought by a biological father and determining it was fundamental error for the trial court to grant relief pursuant to a nonexistent cause of action?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_10559",
+  "query": "Does the court hold that when the evidence shows that the railroad customarily does not enforce a safety rule the jury is entitled to consider whether that custom constituted negligence and whether it caused in whole or in part the plaintiffs injury?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_10566",
+  "query": "Does the court hold that the standard policy exclusion of injuries expected or intended by the insured refers only to bodily injury that the insured in fact subjectively wanted intended to be a result of his conduct or in fact subjectively foresaw as practically certain expected to be a result of his conduct?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_11171",
+  "query": "Does the court hold that grandmother in loco parentis of her three grandchildren had protected liberty interest in their future care and custody?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_11323",
+  "query": "Does the court hold that effect of bankruptcy discharge under arizona law is not an extinguishment of the debt but only a bar to enforcement of the debt as a personal obligation of the debtor?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_12164",
+  "query": "Does the court hold that recognizing five rationales for forbidding counsel to appear as witness and stating that a judge is unlikely to be confused by the dual appearance as advocate and witness?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_12723",
+  "query": "Does the court hold that plaintiffs had not fraudulently joined nondiverse defendants where the plaintiffs claims were based on respondeat superior if no cause of action can be stated against the nondiverse defendants for their alleged torts no case exists against defendant new england for example if a statute of limitation has run on a claim against a nondiverse defendant it necessarily has run for new england accordingly the arguments offered by new england to prove fraudulent joinder simultaneously show that no case can be made against the diverse defendant?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_12995",
+  "query": "Does the court hold that the removal of a public speaker by the mayor at a city commission meeting was not a first amendment violation and thus permissible because to deny the presiding officer the authority to regulate irrelevant debate and disruptive behavior at a public meeting would cause such meetings to drag on interminably and deny others the opportunity to voice their opinions?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_13298",
+  "query": "Does the court hold that a claim for damages that would invalidate a conviction or sentence that has not already been invalidated or reversed on direct appeal by executive order by an authorized state tribunal or by a writ of habeas corpus is not cognizable under 1983?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_14180",
+  "query": "Does the court hold that where a zoning board had no authority under state law to take certain actions with respect to a protected property interest a trier of fact could conclude that there was no rational basis for the towns zoning boards actions and that as a result the zoning board violated appellants rights to substantive due process?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_15344",
+  "query": "Does the court hold that ttcas motorvehicle waiver did not apply to claim whose gravamen was that bus drivers failure to supervise the public by for example failing to supervise tortfeasor passenger and failing to return to pick up victim passenger allowed tortfeasor who had threatened victim on bus to assault victim after both had exited?",
+  "source": "casehold"
+ },
+ {
+  "id": "casehold_train_15914",
+  "query": "Does the court hold that the district court erred in ruling that a plaintiff had failed to offer any evidence to survive summary judgment on its discrimination claim where the district court had simply discounted plaintiffs admissible evidence as less probative than defendants?",
+  "source": "casehold"
+ }
+]

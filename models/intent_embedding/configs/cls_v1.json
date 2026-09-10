@@ -1,0 +1,15 @@
+{
+  "name": "embedding_cls",
+  "version": "v1",
+  "variant": "cls",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "max_iter": 2000,
+  "batch_size": 64,
+  "threshold": 0.5,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "output_dir": "models/intent_embedding/runs/cls_v1",
+  "export_dir": "models/intent_embedding/exported/cls_v1",
+  "classifier": "logreg",
+  "seed": 20260803,
+  "C": 4.0
+}

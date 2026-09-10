@@ -1,0 +1,14 @@
+{
+  "family": "embedding",
+  "name": "embedding_knn",
+  "version": "v1",
+  "variant": "knn",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "threshold": 0.5,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "k": 7,
+  "vote": "distance_weighted",
+  "train_cases": 9000,
+  "dimensions": 384,
+  "index_rows": 9000
+}

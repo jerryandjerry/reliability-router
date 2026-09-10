@@ -1,0 +1,20 @@
+{
+  "family": "embedding",
+  "name": "embedding_catboost",
+  "version": "v1",
+  "library": "catboost",
+  "threshold": 0.5,
+  "params": {
+    "iterations": 706,
+    "learning_rate": 0.010494518848247715,
+    "depth": 8,
+    "l2_leaf_reg": 7.94374051682333,
+    "random_strength": 0.16653128091231256
+  },
+  "search_cv_accuracy": 0.7334,
+  "train_path": "data/intent_parser_splits/train.jsonl",
+  "train_cases": 9000,
+  "variant": "cls",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "training_set_accuracy": 0.9126
+}

@@ -1,0 +1,248 @@
+[
+ {
+  "id": "streamingqa_test_14988",
+  "query": "where do they usually hold those",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_15757",
+  "query": "ok but where did it actually happen",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_16148",
+  "query": "name of her show?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_16432",
+  "query": "which street was the car parked on",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_16651",
+  "query": "who are the parents",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_16876",
+  "query": "what are they getting ready for exactly",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_17063",
+  "query": "他什么时候入的股",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_test_18519",
+  "query": "where was the service held",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_19451",
+  "query": "when was the hearing again",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_19506",
+  "query": "what side was he on before all that",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_19680",
+  "query": "where'd he announce it",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_20693",
+  "query": "whats the official number now",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_20945",
+  "query": "when did it launch",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_22442",
+  "query": "那个地方叫啥来着",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_test_22701",
+  "query": "whos joining",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_25385",
+  "query": "whos the ceo",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_25710",
+  "query": "which one has them all over the country",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_27000",
+  "query": "and where do they usually take him walking",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_29134",
+  "query": "who did he go live with",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_32697",
+  "query": "the study, which journal?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_test_35955",
+  "query": "第二次那个数据是哪个机构发的来着",
+  "ambiguity_style": "underspecified",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_test_36169",
+  "query": "whats the place called",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_56",
+  "query": "who asked him to do it",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_450",
+  "query": "that fifth place finish, where was it",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_5149",
+  "query": "where did the press keep away from that day",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_5170",
+  "query": "转诊去哪",
+  "ambiguity_style": "terse",
+  "lang": "zh"
+ },
+ {
+  "id": "streamingqa_validation_5546",
+  "query": "the broadband share?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_7101",
+  "query": "and when did that start causing real trouble",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_7114",
+  "query": "covering what",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "streamingqa_validation_8246",
+  "query": "when did the problems start",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_dev_3",
+  "query": "who played the twins",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_dev_166",
+  "query": "who signed off on it",
+  "ambiguity_style": "multi_interpretation",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_dev_276",
+  "query": "那首歌呢 哪年出的",
+  "ambiguity_style": "context_dependent",
+  "lang": "zh"
+ },
+ {
+  "id": "asqa_dev_328",
+  "query": "the frat name in that movie?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_dev_504",
+  "query": "whos the minister",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_dev_587",
+  "query": "who played the kid version of him",
+  "ambiguity_style": "underspecified",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_83",
+  "query": "founded when",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_141",
+  "query": "ok and the first one came out when",
+  "ambiguity_style": "context_dependent",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_150",
+  "query": "那个部门现在谁在管",
+  "ambiguity_style": "pronoun_reference",
+  "lang": "zh"
+ },
+ {
+  "id": "asqa_train_382",
+  "query": "name of the plant?",
+  "ambiguity_style": "elliptical_fragment",
+  "lang": "en"
+ },
+ {
+  "id": "asqa_train_468",
+  "query": "wheres it being held",
+  "ambiguity_style": "terse",
+  "lang": "en"
+ }
+]
